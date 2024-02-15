@@ -1,0 +1,32 @@
+{
+	"nodes":[
+		{"id":"f59ce8c38277b146","type":"text","text":"数据库基本概念","x":-500,"y":-119,"width":180,"height":55},
+		{"id":"6b0b62279b454765","type":"text","text":"数据要按照一定的数据模型组织、描述和存储，具有较小的冗余度、较高的数据独立性，系统易于扩展，并可以被多个用户分享","x":300,"y":-258,"width":300,"height":167},
+		{"id":"f8dac3da42d1e68c","type":"text","text":"三个特点：永久存储、有组织、可共享","x":300,"y":-18,"width":300,"height":60},
+		{"id":"3e7aa186f6a8f2d9","x":300,"y":82,"width":300,"height":183,"type":"text","text":"功能：1.数据定义功能\n2.数据操纵功能\n3.数据库的运行管理功能\n4.数据库的建立和维护\n5.数据组织、存储和管理功能\n6.其他功能"},
+		{"id":"b40355e5f146ddf0","x":300,"y":285,"width":300,"height":60,"type":"text","text":"组织：分为逻辑组织和物理组织"},
+		{"id":"fd47eea560f51f80","x":720,"y":303,"width":250,"height":60,"type":"text","text":"物理组织：是数据在物理设备上的结构形式"},
+		{"id":"b07d50603acbe48c","x":720,"y":197,"width":250,"height":98,"type":"text","text":"逻辑组织：是用户或应用程序所使用的数据结构形式"},
+		{"id":"24100179bd0d4515","x":1060,"y":265,"width":250,"height":60,"type":"text","text":"两者可相互独立"},
+		{"id":"39b37eca428761a5","type":"text","text":"数据库：是指长期储存在计算机中的有组织、可共享的数据集合","x":-80,"y":-119,"width":250,"height":131},
+		{"id":"01ee2a60f9bab6ad","type":"text","text":"数据：描述事物的符号记录，是指利用物理符号记录下来的、可以鉴别的信息","x":-80,"y":-300,"width":250,"height":140},
+		{"id":"fbe42b672042e5ae","x":-80,"y":42,"width":250,"height":132,"type":"text","text":"数据库管理系统：专门用于建立和管理数据库的一套软件，介于应用程序和操作系统之间"},
+		{"id":"9108c612da3ae467","x":-80,"y":360,"width":250,"height":92,"type":"text","text":"数据库系统：是指在计算机中引入数据库之后的系统"},
+		{"id":"a25d34c3d3dc29ff","x":300,"y":363,"width":300,"height":117,"type":"text","text":"构成：数据库、数据库管理系统、及相关的实用工具、应用程序、数据库管理员和用户"}
+	],
+	"edges":[
+		{"id":"cc81b45082564896","fromNode":"01ee2a60f9bab6ad","fromSide":"bottom","toNode":"f59ce8c38277b146","toSide":"right"},
+		{"id":"7dd84935d530cc54","fromNode":"39b37eca428761a5","fromSide":"left","toNode":"f59ce8c38277b146","toSide":"right"},
+		{"id":"4c47f2bfe8c912bf","fromNode":"6b0b62279b454765","fromSide":"left","toNode":"39b37eca428761a5","toSide":"right"},
+		{"id":"8c2750e021b842e1","fromNode":"f8dac3da42d1e68c","fromSide":"left","toNode":"39b37eca428761a5","toSide":"right"},
+		{"id":"d26a5723c6fda53c","fromNode":"3e7aa186f6a8f2d9","fromSide":"left","toNode":"fbe42b672042e5ae","toSide":"right"},
+		{"id":"f2121cbb8230d0d9","fromNode":"b40355e5f146ddf0","fromSide":"left","toNode":"fbe42b672042e5ae","toSide":"right"},
+		{"id":"1da08dc7baaaf618","fromNode":"b07d50603acbe48c","fromSide":"left","toNode":"b40355e5f146ddf0","toSide":"right"},
+		{"id":"f9c3770ccc9e5cf1","fromNode":"fd47eea560f51f80","fromSide":"left","toNode":"b40355e5f146ddf0","toSide":"right"},
+		{"id":"ce72389a9ecd7530","fromNode":"24100179bd0d4515","fromSide":"left","toNode":"b07d50603acbe48c","toSide":"right"},
+		{"id":"0e04a71a5185d43d","fromNode":"24100179bd0d4515","fromSide":"left","toNode":"fd47eea560f51f80","toSide":"right"},
+		{"id":"81dbb2053f0f743f","fromNode":"fbe42b672042e5ae","fromSide":"left","toNode":"f59ce8c38277b146","toSide":"right"},
+		{"id":"945eb6c4a427af72","fromNode":"9108c612da3ae467","fromSide":"left","toNode":"f59ce8c38277b146","toSide":"right"},
+		{"id":"c34ff75ec8099234","fromNode":"a25d34c3d3dc29ff","fromSide":"left","toNode":"9108c612da3ae467","toSide":"right"}
+	]
+}

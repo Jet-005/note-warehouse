@@ -1,0 +1,30 @@
+{
+	"nodes":[
+		{"id":"cf5e1e3ea2ed3632","type":"text","text":"数据库系统的结构","x":-571,"y":-145,"width":211,"height":60},
+		{"id":"5079dc375a59029f","type":"text","text":"DBA视角","x":-320,"y":-289,"width":250,"height":60},
+		{"id":"a5cffef837f6565f","type":"text","text":"内部系统结构，采用三级模式","x":56,"y":-380,"width":250,"height":60},
+		{"id":"9fa953a8cf8f5990","type":"text","text":"模式、内模式、外模式","x":344,"y":-380,"width":250,"height":60},
+		{"id":"6c296653b2fa4eb2","type":"text","text":"外部系统结构","x":56,"y":-259,"width":250,"height":60},
+		{"id":"4874219dbee2344f","type":"text","text":"集中式结构、分布式结构、并行结构","x":344,"y":-259,"width":250,"height":60},
+		{"id":"9c66475cc8347806","type":"text","text":"数据库应用的用户视角","x":-320,"y":-85,"width":250,"height":60},
+		{"id":"ae63318b9417d2a1","type":"text","text":"客户/服务器结构","x":56,"y":-145,"width":250,"height":60},
+		{"id":"50fa27f46f028472","type":"text","text":"浏览器/服务器结构","x":56,"y":-55,"width":250,"height":60},
+		{"id":"2a4e4bdd67e83e2e","type":"text","text":"![微信图片编辑_20240219172816.jpg](https://obsi-jet.oss-cn-beijing.aliyuncs.com/img/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87%E7%BC%96%E8%BE%91_20240219172816.jpg)\n","x":900,"y":-891,"width":529,"height":338},
+		{"id":"c907da53f308ba04","x":900,"y":-523,"width":449,"height":234,"type":"text","text":"\n| 名称 | 别称 | 视图类型 |\n| ---- | ---- | ---- |\n| 模式 | 概念模式、逻辑模式 | 概念视图 |\n| 外模式 | 子模式、用户模式 | 数据视图，即用户视图 |\n| 内模式 | 存储模式 | 内部视图，或存储视图 |\n"},
+		{"id":"07ea4a151bb6a29f","x":900,"y":-254,"width":449,"height":180,"type":"text","text":"三级模式结构的两层映像与数据独立性：\n所谓映像，就是一种对应规则，它指出映像双方是如何进行转换的。\n\n模式<->内模式映像：保证了数据与程序的物理独立性\n外模式<->模式映像：保证了数据与程序的逻辑独立性\n"},
+		{"id":"72fa0040223132b4","x":344,"y":-55,"width":250,"height":60,"type":"text","text":"三层：表示层、处理层（中间层）、数据层"}
+	],
+	"edges":[
+		{"id":"3f5b2858be64cdba","fromNode":"5079dc375a59029f","fromSide":"right","toNode":"a5cffef837f6565f","toSide":"left"},
+		{"id":"e3228ebb4bcfa321","fromNode":"a5cffef837f6565f","fromSide":"right","toNode":"9fa953a8cf8f5990","toSide":"left"},
+		{"id":"8136989d4bab9268","fromNode":"6c296653b2fa4eb2","fromSide":"right","toNode":"4874219dbee2344f","toSide":"left"},
+		{"id":"9db4fa3b8b7e42ab","fromNode":"5079dc375a59029f","fromSide":"right","toNode":"6c296653b2fa4eb2","toSide":"left"},
+		{"id":"15fa0a83fd7fad28","fromNode":"9c66475cc8347806","fromSide":"right","toNode":"ae63318b9417d2a1","toSide":"left"},
+		{"id":"8259965df7ff6501","fromNode":"9c66475cc8347806","fromSide":"right","toNode":"50fa27f46f028472","toSide":"left"},
+		{"id":"ab22257c5e980421","fromNode":"9c66475cc8347806","fromSide":"left","toNode":"5079dc375a59029f","toSide":"left"},
+		{"id":"930eb1c6a7cbae01","fromNode":"9fa953a8cf8f5990","fromSide":"right","toNode":"2a4e4bdd67e83e2e","toSide":"left"},
+		{"id":"f45ddde03b4bf13a","fromNode":"9fa953a8cf8f5990","fromSide":"right","toNode":"c907da53f308ba04","toSide":"left"},
+		{"id":"64ad6a1c57c8f1ad","fromNode":"9fa953a8cf8f5990","fromSide":"right","toNode":"07ea4a151bb6a29f","toSide":"left"},
+		{"id":"b697d3b8337e4302","fromNode":"50fa27f46f028472","fromSide":"right","toNode":"72fa0040223132b4","toSide":"left"}
+	]
+}

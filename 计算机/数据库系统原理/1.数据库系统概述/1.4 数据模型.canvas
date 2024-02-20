@@ -1,0 +1,30 @@
+{
+	"nodes":[
+		{"id":"eef40669efb61c54","type":"text","text":"数据模型","x":-516,"y":-241,"width":136,"height":60},
+		{"id":"4c9d306063d0aab9","type":"text","text":"模型：是现实世界特征的模拟和抽象表达","x":-300,"y":-360,"width":250,"height":60},
+		{"id":"d5321403af86576e","type":"text","text":"数据模型：是对现实世界数据特征的抽象，描述的是数据的共性内容，数据模型是模型化数据和信息的工具，也是数据库系统的核心和基础","x":-300,"y":-271,"width":250,"height":191},
+		{"id":"1c297205c1850a8c","type":"text","text":"数据模型有3个组成要素","x":-300,"y":-40,"width":250,"height":60},
+		{"id":"fad1dd645a0b8813","type":"text","text":"数据特征","x":-300,"y":240,"width":250,"height":60},
+		{"id":"2561a9be8bca2a62","type":"text","text":"数据结构：描述的是系统的静态特征，即数据对象的数据类型、内容、属性以及数据对象之间的联系","x":80,"y":-211,"width":250,"height":130},
+		{"id":"600f59b5c0e52ac9","type":"text","text":"数据操作：描述的是系统的动态特征","x":80,"y":-41,"width":250,"height":60},
+		{"id":"ca6dc49dab83e74c","type":"text","text":"数据约束：描述数据结构中数据间的语法和语义关联","x":80,"y":59,"width":250,"height":99},
+		{"id":"975ba60d05c43e13","type":"text","text":"静态","x":80,"y":209,"width":250,"height":60},
+		{"id":"dff221bd1e088ac2","type":"text","text":"动态：指对数据可以进行符合一定规则的操作","x":80,"y":339,"width":250,"height":60},
+		{"id":"eb7c99dfa7247a35","type":"text","text":"数据的基本结构","x":540,"y":84,"width":187,"height":50},
+		{"id":"bb2d1a7b28ee46bf","type":"text","text":"数据间的联系","x":540,"y":165,"width":187,"height":50},
+		{"id":"6f50619479dd5a7a","type":"text","text":"数据取值范围的约束","x":540,"y":240,"width":187,"height":85},
+		{"id":"aea525d55dda7b89","x":-300,"y":460,"width":250,"height":60,"type":"text","text":"数据模型的分类"},
+		{"id":"d7ec79528ad13674","x":80,"y":449,"width":250,"height":142,"type":"text","text":"现实世界→概念模型（信息世界）→逻辑模型和物理模型（机器世界）"}
+	],
+	"edges":[
+		{"id":"5bbef9c797fe89b6","fromNode":"1c297205c1850a8c","fromSide":"right","toNode":"2561a9be8bca2a62","toSide":"left"},
+		{"id":"6c9f08171286bd01","fromNode":"1c297205c1850a8c","fromSide":"right","toNode":"600f59b5c0e52ac9","toSide":"left"},
+		{"id":"376a4e0f9d510cb9","fromNode":"1c297205c1850a8c","fromSide":"right","toNode":"ca6dc49dab83e74c","toSide":"left"},
+		{"id":"0d44368f3f33648b","fromNode":"975ba60d05c43e13","fromSide":"right","toNode":"eb7c99dfa7247a35","toSide":"left"},
+		{"id":"7142064fba80c392","fromNode":"975ba60d05c43e13","fromSide":"right","toNode":"bb2d1a7b28ee46bf","toSide":"left"},
+		{"id":"deccb05a6f1d10c9","fromNode":"975ba60d05c43e13","fromSide":"right","toNode":"6f50619479dd5a7a","toSide":"left"},
+		{"id":"91eea8bcd9eda127","fromNode":"fad1dd645a0b8813","fromSide":"right","toNode":"975ba60d05c43e13","toSide":"left"},
+		{"id":"06820cc0b5698732","fromNode":"fad1dd645a0b8813","fromSide":"right","toNode":"dff221bd1e088ac2","toSide":"left"},
+		{"id":"68aa5650eb4f5a9e","fromNode":"aea525d55dda7b89","fromSide":"right","toNode":"d7ec79528ad13674","toSide":"left"}
+	]
+}

@@ -1,0 +1,17 @@
+{
+	"nodes":[
+		{"id":"d660f7d4b563a6b5","x":-463,"y":-275,"width":250,"height":60,"type":"text","text":"软件开发的困难"},
+		{"id":"5501d1b694c3dc4a","x":-80,"y":-390,"width":250,"height":60,"type":"text","text":"软件开发的基本问题"},
+		{"id":"0245467754f72d33","type":"text","text":"大型软件开发中的困难","x":-80,"y":-275,"width":250,"height":60},
+		{"id":"2a36d0a5979f7be0","x":280,"y":-365,"width":340,"height":240,"type":"text","text":"一、一致性的保持成为十分困难的问题\n\n二、测试的困难大大增加\n\n三、工作进度难以控制\n\n四、文档与代码的协调十分困难\n\n五、版本的更新带来的困难"},
+		{"id":"f640ee5df3a18e96","x":-80,"y":-90,"width":250,"height":60,"type":"text","text":"困难产生的原因"},
+		{"id":"e71d25e0548ec700","type":"text","text":"一、大系统的复杂性\n\n二、许多具有主动性的个人之间的组织和协调带来大量的困难\n\n三、各个应用领域之间的差别导致困难的增加\n\n四、时间的因素、变化的因素给软件开发工作带来的困难","x":280,"y":-90,"width":340,"height":280}
+	],
+	"edges":[
+		{"id":"52f98624a45038be","fromNode":"d660f7d4b563a6b5","fromSide":"right","toNode":"5501d1b694c3dc4a","toSide":"left"},
+		{"id":"0b375d10c1a90443","fromNode":"d660f7d4b563a6b5","fromSide":"right","toNode":"0245467754f72d33","toSide":"left"},
+		{"id":"494f9bb8eac366d7","fromNode":"0245467754f72d33","fromSide":"right","toNode":"2a36d0a5979f7be0","toSide":"left"},
+		{"id":"d051d34da0f01a01","fromNode":"f640ee5df3a18e96","fromSide":"right","toNode":"e71d25e0548ec700","toSide":"left"},
+		{"id":"9ac610fce6271519","fromNode":"d660f7d4b563a6b5","fromSide":"right","toNode":"f640ee5df3a18e96","toSide":"left"}
+	]
+}

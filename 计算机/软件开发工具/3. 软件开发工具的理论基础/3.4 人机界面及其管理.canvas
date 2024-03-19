@@ -1,0 +1,25 @@
+{
+	"nodes":[
+		{"id":"e2257c06ba1ad672","type":"text","text":"人机界面的研究角度","x":-160,"y":-280,"width":250,"height":60},
+		{"id":"db064a7c3dc619c0","type":"text","text":"从软件开发的角度","x":200,"y":-400,"width":356,"height":60},
+		{"id":"24ebf21b11c0da50","type":"text","text":"手工进行系统分析的阶段：许多问题出在信息交流中的误解与损失","x":200,"y":-280,"width":356,"height":80},
+		{"id":"9327259dfd472c90","type":"text","text":"信息库思想","x":-160,"y":-103,"width":250,"height":60},
+		{"id":"56b24026163d4c3f","type":"text","text":"人机界面及其管理","x":-540,"y":-103,"width":206,"height":60},
+		{"id":"e4c9c8509c65283c","type":"text","text":"用户界面的主要功能是通信。","x":660,"y":-460,"width":280,"height":60},
+		{"id":"47d4db458e6c7302","type":"text","text":"信息库的研究方面","x":-160,"y":220,"width":250,"height":60},
+		{"id":"db45846a25cf635d","type":"text","text":"信息库的内容应当包含哪些？\n\n软件开发全过程所有有用的信息","x":240,"y":210,"width":400,"height":80},
+		{"id":"6ad7c62a4dddd597","type":"text","text":"信息库应当具备哪些功能？\n\n除了具备增、删、查、改以外，一方面需要把计算机内外信息统一存储起来管理，另一方面信息库对不同的人员（分析人员，程序员和维护员）中同的使用权限。","x":240,"y":350,"width":400,"height":180},
+		{"id":"eb294e3eaf25729a","type":"text","text":"如何保持一致性？\n\n这对信息库来说是最困难的，也是研究的核心问题。","x":240,"y":550,"width":400,"height":120}
+	],
+	"edges":[
+		{"id":"372dff6b5c3e063c","fromNode":"56b24026163d4c3f","fromSide":"right","toNode":"e2257c06ba1ad672","toSide":"left"},
+		{"id":"9f6ada939a3a0797","fromNode":"e2257c06ba1ad672","fromSide":"right","toNode":"db064a7c3dc619c0","toSide":"left"},
+		{"id":"69f20fa6d0667381","fromNode":"e2257c06ba1ad672","fromSide":"right","toNode":"24ebf21b11c0da50","toSide":"left"},
+		{"id":"49299128ceeb140a","fromNode":"56b24026163d4c3f","fromSide":"right","toNode":"9327259dfd472c90","toSide":"left"},
+		{"id":"d6bf7ba571a1153b","fromNode":"56b24026163d4c3f","fromSide":"right","toNode":"47d4db458e6c7302","toSide":"left"},
+		{"id":"b16b23ef586cbfab","fromNode":"47d4db458e6c7302","fromSide":"right","toNode":"db45846a25cf635d","toSide":"left"},
+		{"id":"bbd5da17697be5e2","fromNode":"47d4db458e6c7302","fromSide":"right","toNode":"6ad7c62a4dddd597","toSide":"left"},
+		{"id":"0cc825079124a3be","fromNode":"47d4db458e6c7302","fromSide":"right","toNode":"eb294e3eaf25729a","toSide":"left"},
+		{"id":"641b480057415df9","fromNode":"db064a7c3dc619c0","fromSide":"right","toNode":"e4c9c8509c65283c","toSide":"left"}
+	]
+}

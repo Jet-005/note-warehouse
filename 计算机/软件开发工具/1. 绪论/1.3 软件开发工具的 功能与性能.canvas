@@ -1,0 +1,37 @@
+{
+	"nodes":[
+		{"id":"f11b19d4089bcb15","type":"text","text":"软件开发工具的 功能与性能","x":-880,"y":-740,"width":208,"height":60},
+		{"id":"b8b46d7621b10d57","type":"text","text":"软件开发的过程","x":-500,"y":-930,"width":218,"height":60},
+		{"id":"d9a4297cc4903ba5","type":"text","text":"软件开发的功能要求","x":-500,"y":-560,"width":218,"height":60},
+		{"id":"380b0ce56c7791dc","type":"text","text":"认识与描述客观系统","x":-80,"y":-610,"width":260,"height":50},
+		{"id":"e1543e1b64f5c1b5","type":"text","text":"![image.png](https://obsi-jet.oss-cn-beijing.aliyuncs.com/img/20240319120156.png)\n","x":-80,"y":-1265,"width":520,"height":335},
+		{"id":"7aded595a7e1ec1a","x":360,"y":-710,"width":250,"height":60,"type":"text","text":"主要应用：需求分析阶段"},
+		{"id":"f34b674f6b71f621","x":360,"y":-614,"width":250,"height":108,"type":"text","text":"需求分析阶段特点：不确定程度更高、更需要经验、更难形式化、规范化"},
+		{"id":"8bc76d63caa287a4","x":360,"y":-460,"width":250,"height":60,"type":"text","text":"每个领域都有其特殊的情况和规律"},
+		{"id":"e89f97d484ee84d7","type":"text","text":"存储及管理开发过程中的信息","x":-80,"y":-320,"width":260,"height":60},
+		{"id":"a536079e49c5dcf2","x":360,"y":-320,"width":250,"height":120,"type":"text","text":"开发过程产生的信息种类多，信息量逐步增大，信息的一致性保持就十分困难"},
+		{"id":"95ceebc5719e1cec","type":"text","text":"文档的编写和生成","x":-80,"y":-103,"width":260,"height":50},
+		{"id":"368ea49cd8032ee8","type":"text","text":"代码的编写和生成","x":-80,"y":-200,"width":260,"height":50},
+		{"id":"1509431aa8f776ac","type":"text","text":"软件项目的管理","x":-80,"y":0,"width":260,"height":50},
+		{"id":"40eb7105bdc13876","x":360,"y":-26,"width":250,"height":103,"type":"text","text":"主要包括：进度管理、资源与费用管理、质量管理等三个基本内容"},
+		{"id":"3a779fa9e7714d9f","type":"text","text":"软件开发的功能性能","x":-500,"y":140,"width":218,"height":60},
+		{"id":"b5434e1cc2deedca","x":-80,"y":140,"width":250,"height":261,"type":"text","text":"一、表达能力与描述能力\n\n二、保持信息一致的能力\n\n三、使用的方便程度\n\n四、工具的可靠程度\n\n五、对硬件和软件环境的要求"}
+	],
+	"edges":[
+		{"id":"d4a344a9a64b5c29","fromNode":"b8b46d7621b10d57","fromSide":"right","toNode":"e1543e1b64f5c1b5","toSide":"left"},
+		{"id":"b57b485ea81ab515","fromNode":"f11b19d4089bcb15","fromSide":"right","toNode":"b8b46d7621b10d57","toSide":"left"},
+		{"id":"e90a6cba81b9fccd","fromNode":"f11b19d4089bcb15","fromSide":"right","toNode":"d9a4297cc4903ba5","toSide":"left"},
+		{"id":"a22f3b82d14d7713","fromNode":"d9a4297cc4903ba5","fromSide":"right","toNode":"380b0ce56c7791dc","toSide":"left"},
+		{"id":"1a84f5262d472369","fromNode":"d9a4297cc4903ba5","fromSide":"right","toNode":"e89f97d484ee84d7","toSide":"left"},
+		{"id":"4b221ea2f845766f","fromNode":"d9a4297cc4903ba5","fromSide":"right","toNode":"368ea49cd8032ee8","toSide":"left"},
+		{"id":"3a9c8253061e6d50","fromNode":"d9a4297cc4903ba5","fromSide":"right","toNode":"95ceebc5719e1cec","toSide":"left"},
+		{"id":"48e174616326690c","fromNode":"380b0ce56c7791dc","fromSide":"right","toNode":"7aded595a7e1ec1a","toSide":"left"},
+		{"id":"93b38960a3c5f874","fromNode":"380b0ce56c7791dc","fromSide":"right","toNode":"f34b674f6b71f621","toSide":"left"},
+		{"id":"6925cc5317697fa4","fromNode":"380b0ce56c7791dc","fromSide":"right","toNode":"8bc76d63caa287a4","toSide":"left"},
+		{"id":"89d7c358d97b718b","fromNode":"e89f97d484ee84d7","fromSide":"right","toNode":"a536079e49c5dcf2","toSide":"left"},
+		{"id":"1c70799f497086fd","fromNode":"d9a4297cc4903ba5","fromSide":"right","toNode":"1509431aa8f776ac","toSide":"left"},
+		{"id":"1827e16f5a725802","fromNode":"1509431aa8f776ac","fromSide":"right","toNode":"40eb7105bdc13876","toSide":"left"},
+		{"id":"2a412f77e0db62ca","fromNode":"f11b19d4089bcb15","fromSide":"right","toNode":"3a779fa9e7714d9f","toSide":"left"},
+		{"id":"cf1bf70738010240","fromNode":"3a779fa9e7714d9f","fromSide":"right","toNode":"b5434e1cc2deedca","toSide":"left"}
+	]
+}

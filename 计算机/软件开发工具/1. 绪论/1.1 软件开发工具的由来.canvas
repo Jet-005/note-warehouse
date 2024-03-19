@@ -10,22 +10,22 @@
 		{"id":"368ea49cd8032ee8","type":"text","text":"第三代计算机语言（3GL）：高级程序设计语言（过程化）\n![image.png](https://obsi-jet.oss-cn-beijing.aliyuncs.com/img/20240313122623.png)","x":-80,"y":-323,"width":408,"height":300},
 		{"id":"95ceebc5719e1cec","type":"text","text":"第四代计算机语言（4GL）：非过程化语言（正在发展中）","x":-80,"y":17,"width":408,"height":80},
 		{"id":"6e13c47a44ef0bfc","type":"text","text":"软件开发工具的产生","x":-500,"y":200,"width":212,"height":60},
-		{"id":"9cd480da2679bbca","x":-80,"y":200,"width":250,"height":60,"type":"text","text":"原因"},
-		{"id":"dc7cb270ae635c16","x":-80,"y":420,"width":250,"height":60,"type":"text","text":"过程"},
-		{"id":"d42f665a7d991f7b","x":360,"y":520,"width":250,"height":60,"type":"text","text":"20世纪70-80年代：文档编写软件、绘图软件等"},
-		{"id":"44654ab6d7683a35","x":360,"y":600,"width":250,"height":61,"type":"text","text":"20实际80年代，进入了专用软件开发工具的阶段"},
+		{"id":"9cd480da2679bbca","type":"text","text":"原因","x":-80,"y":200,"width":250,"height":60},
+		{"id":"dc7cb270ae635c16","type":"text","text":"过程","x":-80,"y":420,"width":250,"height":60},
+		{"id":"d42f665a7d991f7b","type":"text","text":"20世纪70-80年代：文档编写软件、绘图软件等","x":360,"y":520,"width":250,"height":60},
+		{"id":"44654ab6d7683a35","type":"text","text":"20实际80年代，进入了专用软件开发工具的阶段","x":360,"y":600,"width":250,"height":61},
 		{"id":"d42f7aec1c68c3e7","type":"text","text":"人类社会、客观世界的复杂性，决定了软件的复杂性","x":360,"y":139,"width":408,"height":91},
 		{"id":"11bcfda0bc7fd04d","type":"text","text":"人类知识的丰富多彩，决定了软件极大的多样性","x":360,"y":260,"width":408,"height":60},
 		{"id":"f9a57dbd2851aa2e","type":"text","text":"客观世界的动态性，决定了软件的可维护性、可重性越来越高","x":360,"y":360,"width":408,"height":80},
-		{"id":"9a3243fdc34ccc9d","x":740,"y":540,"width":250,"height":60,"type":"text","text":"面向特定功能模块的代码生成程序"},
+		{"id":"9a3243fdc34ccc9d","type":"text","text":"面向特定功能模块的代码生成程序","x":740,"y":540,"width":250,"height":60},
 		{"id":"5484f52c360ae2f4","type":"text","text":"综合性第四代语言","x":740,"y":621,"width":250,"height":60},
 		{"id":"041f9a967e2bae07","type":"text","text":"专用于画数据流程图上，E-R或程序框图的绘图软件","x":740,"y":710,"width":250,"height":60},
-		{"id":"b44a3b63381d33d5","x":740,"y":800,"width":250,"height":120,"type":"text","text":"没有解决保持一致性的问题。问题根源：对软件的开发缺乏全面的，统一的支撑环境"},
+		{"id":"b44a3b63381d33d5","type":"text","text":"没有解决保持一致性的问题。问题根源：对软件的开发缺乏全面的，统一的支撑环境","x":740,"y":800,"width":250,"height":120},
 		{"id":"49d98f196f7aa179","type":"text","text":"20实际90年代，进入了集成的软件开发环境","x":360,"y":980,"width":250,"height":61},
-		{"id":"6d40097cffbf81dd","x":740,"y":980,"width":250,"height":100,"type":"text","text":"标志事件：1989年，IBM公司宣布了一个名为AD/Cycle的巨大理论框架"},
+		{"id":"6d40097cffbf81dd","type":"text","text":"标志事件：1989年，IBM公司宣布了一个名为AD/Cycle的巨大理论框架","x":740,"y":980,"width":250,"height":100},
 		{"id":"7b3aef825d281044","type":"text","text":"21世纪以来，进入了新的阶段","x":360,"y":1140,"width":250,"height":61},
-		{"id":"8682c80e48abcf6d","x":740,"y":1120,"width":250,"height":60,"type":"text","text":"面向网络，不仅基于网络，而且用于网络"},
-		{"id":"33e32c1a388abcdf","x":740,"y":1201,"width":250,"height":60,"type":"text","text":"开源软件的兴起与运用"}
+		{"id":"8682c80e48abcf6d","type":"text","text":"面向网络，不仅基于网络，而且用于网络","x":740,"y":1120,"width":250,"height":60},
+		{"id":"33e32c1a388abcdf","type":"text","text":"开源软件的兴起与运用","x":740,"y":1201,"width":250,"height":60}
 	],
 	"edges":[
 		{"id":"d4a344a9a64b5c29","fromNode":"b8b46d7621b10d57","fromSide":"right","toNode":"e1543e1b64f5c1b5","toSide":"left"},
@@ -51,6 +51,7 @@
 		{"id":"cfc8784ed3d805be","fromNode":"dc7cb270ae635c16","fromSide":"right","toNode":"49d98f196f7aa179","toSide":"left"},
 		{"id":"9d60092433edba7b","fromNode":"49d98f196f7aa179","fromSide":"right","toNode":"6d40097cffbf81dd","toSide":"left"},
 		{"id":"d31ba8dbda95917f","fromNode":"7b3aef825d281044","fromSide":"right","toNode":"8682c80e48abcf6d","toSide":"left"},
-		{"id":"e84a68866040c427","fromNode":"7b3aef825d281044","fromSide":"right","toNode":"33e32c1a388abcdf","toSide":"left"}
+		{"id":"e84a68866040c427","fromNode":"7b3aef825d281044","fromSide":"right","toNode":"33e32c1a388abcdf","toSide":"left"},
+		{"id":"c0f3cf1746981559","fromNode":"dc7cb270ae635c16","fromSide":"right","toNode":"7b3aef825d281044","toSide":"left"}
 	]
 }

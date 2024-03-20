@@ -1,0 +1,25 @@
+{
+	"nodes":[
+		{"id":"901b5a92d111c54e","type":"text","text":"总控和人机界面","x":-560,"y":-140,"width":250,"height":60},
+		{"id":"bec1c68011e5d1ab","type":"text","text":"总控和人机界面的位置","x":-160,"y":-140,"width":250,"height":60},
+		{"id":"d7d385428219e86d","type":"text","text":"![](https://obsi-jet.oss-cn-beijing.aliyuncs.com/img/20240320161200.png)\n","x":240,"y":-336,"width":685,"height":453},
+		{"id":"a3f5befdcbc873cb","x":-160,"y":206,"width":250,"height":60,"type":"text","text":"技术要点"},
+		{"id":"45969f14832a7595","x":240,"y":203,"width":685,"height":66,"type":"text","text":"面向使用者"},
+		{"id":"e6de724fc7037988","x":240,"y":380,"width":685,"height":60,"type":"text","text":"保证信息的准确传递"},
+		{"id":"24a13f137c729ba7","x":1060,"y":99,"width":372,"height":209,"type":"text","text":"软件开发工具必须考虑所有用户的使用要求和习惯，具体体现在：\n一、总控对各部分的调度与安排应符合各个开发阶段的模式；\n\n二、向用户提供的统一界面应当体现这个模式"},
+		{"id":"f83d6bba5f788715","x":1060,"y":355,"width":372,"height":110,"type":"text","text":"各个部分，不管是做为分散的，还是集成一体的，他们之间的信息交流联系起来，保持一致性。"},
+		{"id":"db786dd0b4536352","x":240,"y":500,"width":685,"height":60,"type":"text","text":"保证系统的开放性"},
+		{"id":"d1ea84ea988ff3fa","x":1060,"y":500,"width":372,"height":100,"type":"text","text":"软件开发过程的复杂性，决定了软件开发工具的多样性和可变性，因此软件开发工具经常需要变更或组合，来适应新环境的需求"}
+	],
+	"edges":[
+		{"id":"0f009f64784ba9e8","fromNode":"901b5a92d111c54e","fromSide":"right","toNode":"bec1c68011e5d1ab","toSide":"left"},
+		{"id":"5f4b2652cb66cb5b","fromNode":"bec1c68011e5d1ab","fromSide":"right","toNode":"d7d385428219e86d","toSide":"left"},
+		{"id":"ec608496ed334f94","fromNode":"901b5a92d111c54e","fromSide":"right","toNode":"a3f5befdcbc873cb","toSide":"left"},
+		{"id":"cd0dcc17fc58fe6e","fromNode":"a3f5befdcbc873cb","fromSide":"right","toNode":"45969f14832a7595","toSide":"left"},
+		{"id":"7104ba9c228e23bb","fromNode":"45969f14832a7595","fromSide":"right","toNode":"24a13f137c729ba7","toSide":"left"},
+		{"id":"29d125f7af4bfb91","fromNode":"a3f5befdcbc873cb","fromSide":"right","toNode":"e6de724fc7037988","toSide":"left"},
+		{"id":"3dfbe854cba13e44","fromNode":"e6de724fc7037988","fromSide":"right","toNode":"f83d6bba5f788715","toSide":"left"},
+		{"id":"4b0e04d798de2bcd","fromNode":"a3f5befdcbc873cb","fromSide":"right","toNode":"db786dd0b4536352","toSide":"left"},
+		{"id":"461eee2e47a77577","fromNode":"db786dd0b4536352","fromSide":"right","toNode":"d1ea84ea988ff3fa","toSide":"left"}
+	]
+}

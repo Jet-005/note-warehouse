@@ -1,0 +1,33 @@
+{
+	"nodes":[
+		{"id":"0a6f292480c159c7","type":"text","text":"文档生成与代码生成","x":-560,"y":-120,"width":250,"height":60},
+		{"id":"805d0bd7322dfa73","type":"text","text":"代码生成","x":-200,"y":-280,"width":250,"height":60},
+		{"id":"311ed42efa3a5ac1","type":"text","text":"基本任务：根据设计要求，自动地或半自动地生成相应的某种语\n言的程序，但是生成的代码，基本上都还需要修改。","x":140,"y":-310,"width":300,"height":120},
+		{"id":"29e3b7b6a096d3b5","type":"text","text":"代码生成的依据","x":140,"y":-145,"width":300,"height":55},
+		{"id":"6213ef520eceff62","x":-200,"y":-27,"width":250,"height":60,"type":"text","text":"代码生成形式"},
+		{"id":"ba160c5cadf773e9","x":140,"y":-27,"width":300,"height":60,"type":"text","text":"输出代码形式：高级程序设计语言和某种机器指令。"},
+		{"id":"59a6c96ed798c953","x":580,"y":-422,"width":340,"height":115,"type":"text","text":"首先，是信息库里已有的相关资料，如系统的总体结构，各模块之间的调用和被调用关系，各基础数据的类型。"},
+		{"id":"350400512759fb29","x":580,"y":-287,"width":340,"height":100,"type":"text","text":"其次，是利用各种标准模块的框架和构件，如报表的表名，表头，总结行和表尾附录。"},
+		{"id":"f108fd17cc6c2b83","x":580,"y":-167,"width":340,"height":100,"type":"text","text":"最后，是利用用户输入的信息，信息库不可能保存所有信息，还有一部分信息需要用户根据情况自行输入。"},
+		{"id":"d9b45cfe358a1f16","x":580,"y":-27,"width":340,"height":147,"type":"text","text":"高级程序设计语言\n优点：可以进一步加工。\n\n缺点：功能较死，效率不高，需要进一步修改。"},
+		{"id":"2c69b38a6e625f32","x":580,"y":140,"width":340,"height":140,"type":"text","text":"机器指令\n优点：可以直接运行。\n缺点：无法进一步加工，依赖特定的软件和硬件环境。"},
+		{"id":"8c2a743da4ce6ca2","x":-200,"y":360,"width":250,"height":60,"type":"text","text":"文档生成"},
+		{"id":"8fd09c96a794ba34","x":165,"y":280,"width":275,"height":110,"type":"text","text":"与代码生成相比，文档数量更大，内容更复杂，无一定的语法规则，具有一定的随意性"},
+		{"id":"c9bd860137c295e5","x":165,"y":420,"width":275,"height":60,"type":"text","text":"文档生成包括：文章，表格和图形三类"}
+	],
+	"edges":[
+		{"id":"27e9fecba402d4a0","fromNode":"0a6f292480c159c7","fromSide":"right","toNode":"805d0bd7322dfa73","toSide":"left"},
+		{"id":"09d9e4ab14c59112","fromNode":"805d0bd7322dfa73","fromSide":"right","toNode":"311ed42efa3a5ac1","toSide":"left"},
+		{"id":"e320ee6bc89f29d5","fromNode":"805d0bd7322dfa73","fromSide":"right","toNode":"29e3b7b6a096d3b5","toSide":"left"},
+		{"id":"63f78bc5bb329cd8","fromNode":"29e3b7b6a096d3b5","fromSide":"right","toNode":"59a6c96ed798c953","toSide":"left"},
+		{"id":"32f016c0888d0d2d","fromNode":"29e3b7b6a096d3b5","fromSide":"right","toNode":"350400512759fb29","toSide":"left"},
+		{"id":"abdd59742e3f1ec5","fromNode":"29e3b7b6a096d3b5","fromSide":"right","toNode":"f108fd17cc6c2b83","toSide":"left"},
+		{"id":"3e4f6f913f5f2cd5","fromNode":"0a6f292480c159c7","fromSide":"right","toNode":"6213ef520eceff62","toSide":"left"},
+		{"id":"1f0aafe502393974","fromNode":"6213ef520eceff62","fromSide":"right","toNode":"ba160c5cadf773e9","toSide":"left"},
+		{"id":"31f357c34adc187f","fromNode":"ba160c5cadf773e9","fromSide":"right","toNode":"d9b45cfe358a1f16","toSide":"left"},
+		{"id":"8cf598f11195326f","fromNode":"ba160c5cadf773e9","fromSide":"right","toNode":"2c69b38a6e625f32","toSide":"left"},
+		{"id":"81603c417b7967d0","fromNode":"0a6f292480c159c7","fromSide":"right","toNode":"8c2a743da4ce6ca2","toSide":"left"},
+		{"id":"cdbc7fff83be65a1","fromNode":"8c2a743da4ce6ca2","fromSide":"right","toNode":"8fd09c96a794ba34","toSide":"left"},
+		{"id":"913a88b3e48534ff","fromNode":"8c2a743da4ce6ca2","fromSide":"right","toNode":"c9bd860137c295e5","toSide":"left"}
+	]
+}

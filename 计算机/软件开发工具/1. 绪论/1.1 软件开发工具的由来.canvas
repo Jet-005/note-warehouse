@@ -3,9 +3,7 @@
 		{"id":"f11b19d4089bcb15","type":"text","text":"软件开发工具的由来","x":-880,"y":-740,"width":208,"height":60},
 		{"id":"b8b46d7621b10d57","type":"text","text":"软件开发工具的范围","x":-500,"y":-930,"width":218,"height":60},
 		{"id":"d9a4297cc4903ba5","type":"text","text":"计算机语言的发展","x":-500,"y":-560,"width":218,"height":60},
-		{"id":"e1543e1b64f5c1b5","type":"text","text":"在高级程序设计语言（3GL）为基础上，为提高软件开发的质量和效率，从规划、分析、设计、测试、文档和管理等各方面，对软件开发者提供各种不同程度的帮助的一类型软件。","x":-80,"y":-1035,"width":408,"height":165},
-		{"id":"19079149dd656c3d","type":"text","text":"一、它是开发软件的软件\n\n二、它是在第三代语言基础上发展起来的\n\n三、所谓的“帮助”是指在编程时，更进一步的要求和希望\n\n四、这里强调对软件开发全过程中的各个阶段的帮助，不是狭义的编程阶段","x":-80,"y":-832,"width":408,"height":199},
-		{"id":"380b0ce56c7791dc","type":"text","text":"第一代计算机语言（1GL）：机器语言（0101二进制）![image.png](https://obsi-jet.oss-cn-beijing.aliyuncs.com/img/20240313122503.png)\n","x":-80,"y":-613,"width":408,"height":90},
+		{"id":"380b0ce56c7791dc","type":"text","text":"第一代计算机语言（1GL）：机器语言（0101二进制）![image.png](https://obsi-jet.oss-cn-beijing.aliyuncs.com/img/20240313122503.png)\n","x":-80,"y":-700,"width":408,"height":177},
 		{"id":"e89f97d484ee84d7","type":"text","text":"第二代计算机语言（2GL）：汇编语言![image.png](https://obsi-jet.oss-cn-beijing.aliyuncs.com/img/20240313122513.png)","x":-80,"y":-503,"width":408,"height":160},
 		{"id":"368ea49cd8032ee8","type":"text","text":"第三代计算机语言（3GL）：高级程序设计语言（过程化）\n![image.png](https://obsi-jet.oss-cn-beijing.aliyuncs.com/img/20240313122623.png)","x":-80,"y":-323,"width":408,"height":300},
 		{"id":"95ceebc5719e1cec","type":"text","text":"第四代计算机语言（4GL）：非过程化语言（正在发展中）","x":-80,"y":17,"width":408,"height":80},
@@ -25,7 +23,9 @@
 		{"id":"6d40097cffbf81dd","type":"text","text":"标志事件：1989年，IBM公司宣布了一个名为AD/Cycle的巨大理论框架","x":740,"y":980,"width":250,"height":100},
 		{"id":"7b3aef825d281044","type":"text","text":"21世纪以来，进入了新的阶段","x":360,"y":1140,"width":250,"height":61},
 		{"id":"8682c80e48abcf6d","type":"text","text":"面向网络，不仅基于网络，而且用于网络","x":740,"y":1120,"width":250,"height":60},
-		{"id":"33e32c1a388abcdf","type":"text","text":"开源软件的兴起与运用","x":740,"y":1201,"width":250,"height":60}
+		{"id":"33e32c1a388abcdf","type":"text","text":"开源软件的兴起与运用","x":740,"y":1201,"width":250,"height":60},
+		{"id":"e1543e1b64f5c1b5","type":"text","text":"在高级程序设计语言（3GL）为基础上，为提高软件开发的质量和效率，从规划、分析、设计、测试、文档和管理等各方面，对软件开发者提供各种不同程度的帮助的一类型软件。","x":-80,"y":-1140,"width":408,"height":135},
+		{"id":"19079149dd656c3d","type":"text","text":"一、它是开发软件的软件\n\n二、它是在第三代语言基础上发展起来的\n\n三、所谓的“帮助”是指在编程时，更进一步的要求和希望\n\n四、这里强调对软件开发全过程中的各个阶段的帮助，不是狭义的编程阶段","x":-80,"y":-980,"width":408,"height":240}
 	],
 	"edges":[
 		{"id":"d4a344a9a64b5c29","fromNode":"b8b46d7621b10d57","fromSide":"right","toNode":"e1543e1b64f5c1b5","toSide":"left"},

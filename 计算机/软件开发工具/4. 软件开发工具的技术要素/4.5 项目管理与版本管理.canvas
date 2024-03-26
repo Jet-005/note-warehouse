@@ -1,0 +1,18 @@
+{
+	"nodes":[
+		{"id":"eea183d759c14809","x":420,"y":-420,"width":250,"height":60,"type":"text","text":"跨生命周期的信息管理管理问题"},
+		{"id":"59d2e2639c409521","x":-260,"y":-320,"width":250,"height":60,"type":"text","text":"项目管理与版本管理"},
+		{"id":"9c32a77c99a8b35d","x":80,"y":-420,"width":250,"height":60,"type":"text","text":"核心问题"},
+		{"id":"ea343b9a006c40ce","x":80,"y":-320,"width":250,"height":60,"type":"text","text":"遇到的困难"},
+		{"id":"2627d95822a0990b","x":420,"y":-320,"width":250,"height":60,"type":"text","text":"实际工作中，前期需求不明确，经常反复更改"},
+		{"id":"21a77e3c72b10fcd","x":760,"y":-390,"width":250,"height":100,"type":"text","text":"项目管理和版本管理数据实际上是信息库的组成一部分。"}
+	],
+	"edges":[
+		{"id":"5b04706eda9b218f","fromNode":"9c32a77c99a8b35d","fromSide":"right","toNode":"eea183d759c14809","toSide":"left"},
+		{"id":"b3478b1b19cca9c6","fromNode":"59d2e2639c409521","fromSide":"right","toNode":"9c32a77c99a8b35d","toSide":"left"},
+		{"id":"d0587d4c6b645b56","fromNode":"59d2e2639c409521","fromSide":"right","toNode":"ea343b9a006c40ce","toSide":"left"},
+		{"id":"ae32bad36f5562f8","fromNode":"ea343b9a006c40ce","fromSide":"right","toNode":"2627d95822a0990b","toSide":"left"},
+		{"id":"a4cf225b1c495c85","fromNode":"eea183d759c14809","fromSide":"right","toNode":"21a77e3c72b10fcd","toSide":"left"},
+		{"id":"3bb1c3f756a28692","fromNode":"2627d95822a0990b","fromSide":"right","toNode":"21a77e3c72b10fcd","toSide":"left"}
+	]
+}

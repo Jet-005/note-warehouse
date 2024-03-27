@@ -1,0 +1,25 @@
+{
+	"nodes":[
+		{"id":"f2ee9a16576aaf6a","type":"text","text":"软件开发工具的使用","x":-800,"y":840,"width":250,"height":60},
+		{"id":"197f2ccfb43988de","type":"text","text":"培训使用人员","x":0,"y":960,"width":250,"height":60},
+		{"id":"aa5e5fcbd916909c","type":"text","text":"经常进行审计与评价工作","x":0,"y":1100,"width":250,"height":60},
+		{"id":"7d9be97f77c7e002","type":"text","text":"对于有关的各种信息， 都要明确其来源、 使用权限、 维护职责等有关事宜","x":400,"y":643,"width":320,"height":95},
+		{"id":"19fb519eb84cea61","type":"text","text":"记录的内容包括系统运行的次数、时间，信息库的输入与更新时间，各种输出的质量与数量，使用者的反映与满意程度，各种故障的情况及处理","x":400,"y":775,"width":320,"height":140},
+		{"id":"a656100ef7e16dcb","type":"text","text":"人员培训工作无疑也应是使用过程中十分重要的、不可缺少的一个部分","x":400,"y":950,"width":320,"height":80},
+		{"id":"dd24aac4feca7fc1","type":"text","text":"审计是指对一个系统的支持状况及效率进行检测与评价，以便进一步用好或改进使用系统","x":400,"y":1080,"width":320,"height":100},
+		{"id":"ac051b0fb0b65d47","type":"text","text":"使用管理工作应当包含以下内容？","x":-400,"y":840,"width":250,"height":60},
+		{"id":"33a04f0e578e6e56","type":"text","text":"严格使用制度","x":0,"y":660,"width":280,"height":60},
+		{"id":"7c28f7598ecc2ce0","type":"text","text":"记录使用的详细过程","x":0,"y":820,"width":280,"height":50}
+	],
+	"edges":[
+		{"id":"08442534fc66e6fa","fromNode":"f2ee9a16576aaf6a","fromSide":"right","toNode":"ac051b0fb0b65d47","toSide":"left"},
+		{"id":"5380e954e238c075","fromNode":"ac051b0fb0b65d47","fromSide":"right","toNode":"33a04f0e578e6e56","toSide":"left"},
+		{"id":"79535f285878a80b","fromNode":"ac051b0fb0b65d47","fromSide":"right","toNode":"7c28f7598ecc2ce0","toSide":"left"},
+		{"id":"869a05faabcd5ff7","fromNode":"33a04f0e578e6e56","fromSide":"right","toNode":"7d9be97f77c7e002","toSide":"left"},
+		{"id":"62a14f16f6e285fd","fromNode":"7c28f7598ecc2ce0","fromSide":"right","toNode":"19fb519eb84cea61","toSide":"left"},
+		{"id":"6e4bba2af4376a77","fromNode":"ac051b0fb0b65d47","fromSide":"right","toNode":"197f2ccfb43988de","toSide":"left"},
+		{"id":"428b2126b40c23c4","fromNode":"197f2ccfb43988de","fromSide":"right","toNode":"a656100ef7e16dcb","toSide":"left"},
+		{"id":"18dc158b3e86f3b7","fromNode":"ac051b0fb0b65d47","fromSide":"right","toNode":"aa5e5fcbd916909c","toSide":"left"},
+		{"id":"fe4cadfd18d4e58a","fromNode":"aa5e5fcbd916909c","fromSide":"right","toNode":"dd24aac4feca7fc1","toSide":"left"}
+	]
+}

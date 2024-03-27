@@ -1,0 +1,19 @@
+{
+	"nodes":[
+		{"id":"f2ee9a16576aaf6a","type":"text","text":"软件开发工具的开发","x":-800,"y":840,"width":250,"height":60},
+		{"id":"ac051b0fb0b65d47","type":"text","text":"对于自己所用而开发工具","x":-400,"y":840,"width":250,"height":60},
+		{"id":"33a04f0e578e6e56","type":"text","text":"首先需要注意的是，从实际出发，设定现实的、有限的目标","x":0,"y":822,"width":280,"height":78},
+		{"id":"7d9be97f77c7e002","type":"text","text":"它是帮助人们开发软件的工具，只能支持人们工作，而不能取代程序员的工作，更不能取代项目负责人的组织与管理作用。","x":420,"y":663,"width":320,"height":117},
+		{"id":"04be70cc5ee8a46a","x":420,"y":802,"width":320,"height":120,"type":"text","text":"根据实际情况，抓住真正需要加强的、真正需要帮助的环节，开发出短小实用的工具，用于支持项目组的工作。"},
+		{"id":"340c8c2b7d9f0bd6","x":0,"y":980,"width":280,"height":60,"type":"text","text":"要注意文档的齐全与资料的积累"},
+		{"id":"6194c9ace82c1d88","x":420,"y":945,"width":320,"height":130,"type":"text","text":"使用软件开发工具一个学习的过程，能否提供及时、有效的服务，能否提供易读易用的使用手册等文档，成为人们评价软件开发工具的主要指标。"}
+	],
+	"edges":[
+		{"id":"08442534fc66e6fa","fromNode":"f2ee9a16576aaf6a","fromSide":"right","toNode":"ac051b0fb0b65d47","toSide":"left"},
+		{"id":"5380e954e238c075","fromNode":"ac051b0fb0b65d47","fromSide":"right","toNode":"33a04f0e578e6e56","toSide":"left"},
+		{"id":"869a05faabcd5ff7","fromNode":"33a04f0e578e6e56","fromSide":"right","toNode":"7d9be97f77c7e002","toSide":"left"},
+		{"id":"8699bf5758794e57","fromNode":"33a04f0e578e6e56","fromSide":"right","toNode":"04be70cc5ee8a46a","toSide":"left"},
+		{"id":"b49fc91a0232cdc2","fromNode":"ac051b0fb0b65d47","fromSide":"right","toNode":"340c8c2b7d9f0bd6","toSide":"left"},
+		{"id":"1bc39117f0756145","fromNode":"340c8c2b7d9f0bd6","fromSide":"right","toNode":"6194c9ace82c1d88","toSide":"left"}
+	]
+}

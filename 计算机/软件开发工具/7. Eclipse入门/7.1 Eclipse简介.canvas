@@ -1,0 +1,11 @@
+{
+	"nodes":[
+		{"id":"d3ab69f286b710e9","x":-560,"y":-120,"width":250,"height":60,"type":"text","text":"Eclipse简介"},
+		{"id":"7fe345012d257eda","x":-180,"y":-320,"width":250,"height":60,"type":"text","text":"什么是Eclipse"},
+		{"id":"b758f6a928990c50","x":200,"y":-362,"width":340,"height":145,"type":"text","text":"Eclipse，是一个开放源代码的，基于Java的可扩展集成应用程序开发环境。\n本身而言，它只是一个框架和一组服务，通过插件组件构建开发环境"}
+	],
+	"edges":[
+		{"id":"c4dbf9b3dc20750b","fromNode":"7fe345012d257eda","fromSide":"right","toNode":"b758f6a928990c50","toSide":"left"},
+		{"id":"d0671c2956a5be43","fromNode":"d3ab69f286b710e9","fromSide":"right","toNode":"7fe345012d257eda","toSide":"left"}
+	]
+}

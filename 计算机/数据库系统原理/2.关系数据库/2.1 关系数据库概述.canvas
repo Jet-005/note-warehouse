@@ -1,0 +1,13 @@
+{
+	"nodes":[
+		{"id":"f58981528fa6b0f4","x":-370,"y":-164,"width":250,"height":60,"type":"text","text":"关系数据库概述"},
+		{"id":"e0b84899ae067a9d","x":0,"y":-340,"width":250,"height":90,"type":"text","text":"**20世纪80年代后**，逐渐成为主流数据模型。"},
+		{"id":"bb6e38b0f73dac65","x":0,"y":-162,"width":250,"height":117,"type":"text","text":"基本特征：使用关系数据模型组织数据，这种思想来源于数学"},
+		{"id":"2aab6621cceede4a","x":0,"y":0,"width":250,"height":160,"type":"text","text":"优点：高级的分过程语言接口、较好的数据独立性，为商品化的关系数据库管理系统的研制做好了技术上的准备"}
+	],
+	"edges":[
+		{"id":"51950ab293a245e2","fromNode":"f58981528fa6b0f4","fromSide":"right","toNode":"e0b84899ae067a9d","toSide":"left"},
+		{"id":"c88c6360327fa340","fromNode":"f58981528fa6b0f4","fromSide":"right","toNode":"bb6e38b0f73dac65","toSide":"left"},
+		{"id":"ecf36576f0e95fe0","fromNode":"f58981528fa6b0f4","fromSide":"right","toNode":"2aab6621cceede4a","toSide":"left"}
+	]
+}

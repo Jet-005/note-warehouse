@@ -1,0 +1,14 @@
+{
+	"nodes":[
+		{"id":"c3db4186de768677","x":-20,"y":-200,"width":600,"height":260,"type":"text","text":"存储函数和存储过程的区别\n\n| 存储函数                      | 存储过程         |\n| :------------------------ | ------------ |\n| 不能拥有输出参数，这是因为存储函数自身就是输出参数 | 可以拥有输出参数     |\n| 可以直接进行调用，且不需要使用CALL语句     | 需要使用CALL语句   |\n| 必须包含一条RETURN语句            | 不允许包含于存储过程中。 |\n"},
+		{"id":"b26773c59f44c949","x":-20,"y":100,"width":600,"height":300,"type":"text","text":"使用CREATE FUNCTION语句创建存储函数\n```\nCREATE FUNCTION sp_name（[func_parameter[，…]]） RETURNS type routine_body\n\nsp_name：指定存储函数的名称\nfunc_parameter：指定存储函数的参数\nRETURNS type：声明存储函数返回值的数据类型；type指定返回值的数据类型\nroutine_body指定存储函数的主体部分，也称为存储函数体\n```"},
+		{"id":"463eeb649a0d53f1","x":-540,"y":220,"width":250,"height":60,"type":"text","text":"存储函数"},
+		{"id":"d01e0dec411004e4","x":-20,"y":460,"width":600,"height":120,"type":"text","text":"调用存储函数：使用关键字SELECT调用存储函数\n```\nSELECT sp_name（[func_parameter[， …]]）\n```\n"},
+		{"id":"20fecc309b06f523","x":-20,"y":620,"width":600,"height":120,"type":"text","text":"删除存储函数：使用DROP FUNCTION语句删除存储函数\n```\nDROP FUNCTION [IF EXISTS] sp_name\n```"}
+	],
+	"edges":[
+		{"id":"f9a7c5aa3890b189","fromNode":"463eeb649a0d53f1","fromSide":"right","toNode":"c3db4186de768677","toSide":"left"},
+		{"id":"59a08990aa65e7e2","fromNode":"463eeb649a0d53f1","fromSide":"right","toNode":"b26773c59f44c949","toSide":"left"},
+		{"id":"a472ed67dfe4f12a","fromNode":"463eeb649a0d53f1","fromSide":"right","toNode":"d01e0dec411004e4","toSide":"left"}
+	]
+}

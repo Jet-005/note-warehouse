@@ -1,0 +1,31 @@
+{
+	"nodes":[
+		{"id":"0fe6fa467d5b2dd2","type":"text","text":"视图是数据库中的一个对象，它是数据库管理系统提供给用户的以多种角度观察数据库中数据的一种重要机制。视图不是数据库中真实的表，而是一张虚拟表，其自身并不存储数据","x":0,"y":-260,"width":340,"height":150},
+		{"id":"592d4ea3a196827f","type":"text","text":"优点\n• 集中分散数据\n• 简化查询语句\n• 重用SQL语句\n• 保护数据安全\n• 共享所需数据\n• 更改数据格式","x":420,"y":-290,"width":250,"height":210},
+		{"id":"f72f2f860c2add14","type":"text","text":"使用CREATE VIEW创建视图\n```\nCREATE VIEW view_name[(column_list)] AS select_statement [WITH [CASCADED | LOCAL] CHECK OPTION]\n```\n**create or replace view**的意思就是若数据库中已经存在这个名字的视图的话，就替代它，若没有则创建视图；\n**create则不进行判断**，若数据库中已经存在的话，则报错，说对象已存在","x":0,"y":-50,"width":340,"height":390},
+		{"id":"623ff3c165211275","x":0,"y":360,"width":340,"height":200,"type":"text","text":"使用DROP VIEW语句删除视图\n```\nDROP VIEW [IF EXISTS] view_name [,view_name]… [RESTRICT | CASCADE]\n```"},
+		{"id":"a791d5ea44426b6f","type":"text","text":"使用ALTER VIEW语句对已有视图的定义（结构）进行修改\n```\nALTER VIEW view_name [(column_list)] AS select_statement [WITH [CASCADED | LOCAL]CHECK OPTION]\n```","x":0,"y":600,"width":340,"height":260},
+		{"id":"b57c61fa1340c647","type":"text","text":"使用SHOW CREATE VIEW语句查看已有视图的定义（结构）\n```\nSHOW CREATE VIEW view_name\n```","x":0,"y":900,"width":340,"height":160},
+		{"id":"88fe76b9fe75b7a8","x":0,"y":1120,"width":340,"height":50,"type":"text","text":"更新视图数据"},
+		{"id":"1c10daab05d430b7","x":420,"y":943,"width":250,"height":405,"type":"text","text":"使用INSERT语句通过视图向基本表插入数据\n在数据库 MySQL_test中，向视图 customers_view插入下面一条记录：\n(909, ′周明′ ， ′M′ ， ′武汉市′ ， ′洪山区′)：\n```\nMySQL> INSERT INTO MySQL_test. customers_view-> VALUES(909， ′周明′ ， ′ M ′ ， ′武汉市′ ， ′洪山区′)\n```"},
+		{"id":"6498419043a33112","x":420,"y":1380,"width":250,"height":420,"type":"text","text":"使用 UPDATE语句通过视图修改基本表的数据\n将视图 customers_view中所有客户的 cust_address列更新为“上海市” 。使用 UPDATE语句在 MySQL的命令行客户端输入如下SQL语句进行数据更新：\n```\nMySQL> UPDATE MySQL test.customers view SET cust address=上海市；\n```"},
+		{"id":"6dae2e67f23a1147","type":"text","text":"使用 DELETE语句通过视图删除基本表的数据\n删除视图customers_view中姓名为“周明”的客户信息使用 DELETE语句在 MySQL的命令行客户端输入如下SQL语句删除指定数据：\n```\nMySQL>DELETE FROM MySQL_test.customers_view-> WHERE cust_name=‘周明’;\n```\n对于依赖多个基本表的视图，也是不能使用DELETE语句的。","x":420,"y":1840,"width":250,"height":480},
+		{"id":"90e8f787a9451756","x":0,"y":2400,"width":340,"height":50,"type":"text","text":"查询视图数据"},
+		{"id":"4e0e5cb1137f851a","type":"text","text":"视图","x":-880,"y":943,"width":250,"height":60},
+		{"id":"c728b746fb984ef6","x":420,"y":2365,"width":250,"height":395,"type":"text","text":"视图一经定义后，就可以如同查询数据库中的真实表一样。\n在视图customers_view中查找客户id号为905的客户姓名及其地址\n```\nMySQL> SELECT cust_name, cust_address -> FROM MySQL_test. customers_view -> WHERE cust_id=905;\n```"}
+	],
+	"edges":[
+		{"id":"69c3bc47e416b678","fromNode":"4e0e5cb1137f851a","fromSide":"right","toNode":"0fe6fa467d5b2dd2","toSide":"left"},
+		{"id":"356e3acbe1f6e479","fromNode":"0fe6fa467d5b2dd2","fromSide":"right","toNode":"592d4ea3a196827f","toSide":"left"},
+		{"id":"474e57d011c31582","fromNode":"4e0e5cb1137f851a","fromSide":"right","toNode":"f72f2f860c2add14","toSide":"left"},
+		{"id":"fc76bd0bb1be61c5","fromNode":"4e0e5cb1137f851a","fromSide":"right","toNode":"623ff3c165211275","toSide":"left"},
+		{"id":"7b214bc56de410a4","fromNode":"4e0e5cb1137f851a","fromSide":"right","toNode":"a791d5ea44426b6f","toSide":"left"},
+		{"id":"13bc9adb1a40ff96","fromNode":"4e0e5cb1137f851a","fromSide":"right","toNode":"b57c61fa1340c647","toSide":"left"},
+		{"id":"56c0a96a67b3efea","fromNode":"4e0e5cb1137f851a","fromSide":"right","toNode":"88fe76b9fe75b7a8","toSide":"left"},
+		{"id":"492a36e0b7cb8b53","fromNode":"88fe76b9fe75b7a8","fromSide":"right","toNode":"1c10daab05d430b7","toSide":"left"},
+		{"id":"f326299229ee69c1","fromNode":"88fe76b9fe75b7a8","fromSide":"right","toNode":"6498419043a33112","toSide":"left"},
+		{"id":"6577726b29a88c75","fromNode":"88fe76b9fe75b7a8","fromSide":"right","toNode":"6dae2e67f23a1147","toSide":"left"},
+		{"id":"cea0adb4779194d4","fromNode":"4e0e5cb1137f851a","fromSide":"right","toNode":"90e8f787a9451756","toSide":"left"},
+		{"id":"c9f57fe6bf7b02f3","fromNode":"90e8f787a9451756","fromSide":"right","toNode":"c728b746fb984ef6","toSide":"left"}
+	]
+}

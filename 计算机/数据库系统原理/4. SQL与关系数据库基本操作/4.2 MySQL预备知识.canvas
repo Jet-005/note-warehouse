@@ -1,0 +1,33 @@
+{
+	"nodes":[
+		{"id":"63ddf102e3ba9da2","x":-125,"y":-30,"width":250,"height":60,"type":"text","text":"MySQL预备知识"},
+		{"id":"c56dc9b3dc9d0f7e","x":280,"y":-220,"width":360,"height":100,"type":"text","text":"MySQL是一个关系数据库管理系统，它具有客户、服务器体系结构，其具有体积小、速度快、**开放源代码**等特点"},
+		{"id":"b69b85fb06792370","x":280,"y":-30,"width":360,"height":60,"type":"text","text":"MySQL使用基础"},
+		{"id":"816a0d5cbfc567ba","x":740,"y":-55,"width":420,"height":110,"type":"text","text":"LAMP模式 、WAMP模式 L（Linux） A（Apache）M（MySQL）P（PHP、Perl、Python） W（Windows）"},
+		{"id":"eb49f0716482bdae","x":280,"y":100,"width":360,"height":60,"type":"text","text":"MySQL扩展语言要素"},
+		{"id":"211459ef72281678","x":740,"y":100,"width":420,"height":60,"type":"text","text":"常量：也称字面值或标量值"},
+		{"id":"17c01fdcee83f26f","x":1260,"y":5,"width":520,"height":250,"type":"text","text":"ü 字符串常量：用**单引号或双引号括起来的字符序列**，分为ASCII\n字符串常量和Unicode字符串常量\nü 数值常量：**整数常量、浮点数常量**\nü 十六进制常量：每对十六进制数字被转换为一个字符，其**最前面有一个字母“X ”（或“x”）**\nü 时间日期常量：用单引号将表示日期时间的字符串括起来而构成的 例如：’2018-06-05’布尔值：TRUE：1 ；FALSE： 0\nü NULL值：表示”没有值”、“无数据”"},
+		{"id":"6faa0696dd4fb3af","x":740,"y":320,"width":420,"height":100,"type":"text","text":"变量：变量用于临时存储数据，变量中的数据可以随着程序的运行而变化；变量属性**有名字、数据类型。**"},
+		{"id":"2fc2cb70bd5ef7fc","x":1260,"y":290,"width":520,"height":80,"type":"text","text":"用户变量：用户变量前常**添加一个符号@**，用于将其与列名区分开。"},
+		{"id":"eb5bace04af0aae6","x":1260,"y":420,"width":520,"height":80,"type":"text","text":"系统变量：大多数系统变量应用于其他SQL语句中时，必须在系统变量前**添加两个@**。"},
+		{"id":"babee88265f41c65","x":740,"y":580,"width":420,"height":60,"type":"text","text":"MySQL提供的几种常用的运算符"},
+		{"id":"268b28cd5b47f969","x":1270,"y":520,"width":510,"height":260,"type":"text","text":"![image.png](https://obsi-jet.oss-cn-beijing.aliyuncs.com/img/20240701142325.png)\n"},
+		{"id":"a1970f1b6e0dfdd2","x":740,"y":820,"width":420,"height":100,"type":"text","text":"表达式\n表达式是常量、变量、列名、复杂计算、运算符和函数的组合"},
+		{"id":"dc97ff2f6b83e321","x":1270,"y":820,"width":510,"height":260,"type":"text","text":"![image.png](https://obsi-jet.oss-cn-beijing.aliyuncs.com/img/20240701142525.png)\n"}
+	],
+	"edges":[
+		{"id":"9ab5f34a158c0efc","fromNode":"63ddf102e3ba9da2","fromSide":"right","toNode":"c56dc9b3dc9d0f7e","toSide":"left"},
+		{"id":"2f096a50a123aa28","fromNode":"63ddf102e3ba9da2","fromSide":"right","toNode":"b69b85fb06792370","toSide":"left"},
+		{"id":"136a2723ef9e8e11","fromNode":"b69b85fb06792370","fromSide":"right","toNode":"816a0d5cbfc567ba","toSide":"left"},
+		{"id":"c5af20cc5bbbe87b","fromNode":"63ddf102e3ba9da2","fromSide":"right","toNode":"eb49f0716482bdae","toSide":"left"},
+		{"id":"00d861368c4d80b2","fromNode":"eb49f0716482bdae","fromSide":"right","toNode":"211459ef72281678","toSide":"left"},
+		{"id":"a27e91e4eb9105a8","fromNode":"211459ef72281678","fromSide":"right","toNode":"17c01fdcee83f26f","toSide":"left"},
+		{"id":"e8702a8ec1d3286f","fromNode":"eb49f0716482bdae","fromSide":"right","toNode":"6faa0696dd4fb3af","toSide":"left"},
+		{"id":"03ed4b9098c4aeab","fromNode":"6faa0696dd4fb3af","fromSide":"right","toNode":"2fc2cb70bd5ef7fc","toSide":"left"},
+		{"id":"ccc606ac6a049afe","fromNode":"6faa0696dd4fb3af","fromSide":"right","toNode":"eb5bace04af0aae6","toSide":"left"},
+		{"id":"8519ae399d1fffaa","fromNode":"eb49f0716482bdae","fromSide":"right","toNode":"babee88265f41c65","toSide":"left"},
+		{"id":"b54d3df76b8963b6","fromNode":"babee88265f41c65","fromSide":"right","toNode":"268b28cd5b47f969","toSide":"left"},
+		{"id":"6431dddceffed36d","fromNode":"eb49f0716482bdae","fromSide":"right","toNode":"a1970f1b6e0dfdd2","toSide":"left"},
+		{"id":"025851382f978c0f","fromNode":"a1970f1b6e0dfdd2","fromSide":"right","toNode":"dc97ff2f6b83e321","toSide":"left"}
+	]
+}

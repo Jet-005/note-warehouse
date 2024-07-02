@@ -1,0 +1,23 @@
+{
+	"nodes":[
+		{"id":"793e0888e6e97759","x":-420,"y":-60,"width":250,"height":60,"type":"text","text":"数据更新"},
+		{"id":"c6f61466975c0880","x":-40,"y":-60,"width":180,"height":60,"type":"text","text":"插入数据"},
+		{"id":"828f267090825929","x":440,"y":-740,"width":660,"height":460,"type":"text","text":"INSERT…VALUES：插入单行或多行元组数据\n```\nINSERT INTO tbl_name [( field1，field2,...fieldN )]\nVALUES [(value1|DEFAULT,...valueN )]\n```\n- 如果数据是字符型，必须使用单引号或者双引号，如\"value\"\n- 具有默认值的列，使用DEFAULT设置为默认值\n- AUTO_INCREMENT的列无需赋值或设置为0，让系统自动赋值\n\n示例：![image.png](https://obsi-jet.oss-cn-beijing.aliyuncs.com/img/20240701162151.png)\n"},
+		{"id":"636fb55bdb2025a8","x":440,"y":-200,"width":660,"height":340,"type":"text","text":"使用INSERT…SET语句插入部分列值数据\n```\nINSERT [INTO] tbl_name SET col_name={expr | DEFAULT},…\n```\n示例：![image.png](https://obsi-jet.oss-cn-beijing.aliyuncs.com/img/20240701162405.png)\n"},
+		{"id":"9f1be520806a2355","x":440,"y":180,"width":660,"height":300,"type":"text","text":"使用INSERT…SELECT语句插入子查询数据\n```\nINSERT [INTO] tbl_name [(col_name,…)] SELECT…\n```\n示例：![image.png](https://obsi-jet.oss-cn-beijing.aliyuncs.com/img/20240701162504.png)\n"},
+		{"id":"ef82b5f298e2345a","x":-40,"y":620,"width":180,"height":60,"type":"text","text":"修改数据"},
+		{"id":"7624122696e8e14a","x":-40,"y":960,"width":180,"height":60,"type":"text","text":"删除数据"},
+		{"id":"844e0c176cabd3eb","x":440,"y":490,"width":660,"height":320,"type":"text","text":"```\nUPDATE tbl_name SET col_name1={expr1|DEFAULT}[,col_name2={expr2|DEFAULT}]…[WHERE where_condition] [ORDER BY …] [LIMIT row_count]\n```\n\n![image.png](https://obsi-jet.oss-cn-beijing.aliyuncs.com/img/20240701162936.png)\n"},
+		{"id":"09b82092f8bc752d","x":440,"y":848,"width":660,"height":284,"type":"text","text":"```\nDELETE FROM tbl_name [WHERE where_condition ] [ORDERBY … ] [LIMIT row_count ]\n```\n![image.png](https://obsi-jet.oss-cn-beijing.aliyuncs.com/img/20240701163036.png)\n"}
+	],
+	"edges":[
+		{"id":"b77a454b2cd03012","fromNode":"793e0888e6e97759","fromSide":"right","toNode":"c6f61466975c0880","toSide":"left"},
+		{"id":"c0efbcf9f214d829","fromNode":"c6f61466975c0880","fromSide":"right","toNode":"828f267090825929","toSide":"left"},
+		{"id":"06e468357a7371ce","fromNode":"c6f61466975c0880","fromSide":"right","toNode":"636fb55bdb2025a8","toSide":"left"},
+		{"id":"81090366fa22336d","fromNode":"c6f61466975c0880","fromSide":"right","toNode":"9f1be520806a2355","toSide":"left"},
+		{"id":"cc6022f9b9f0df8f","fromNode":"793e0888e6e97759","fromSide":"right","toNode":"ef82b5f298e2345a","toSide":"left"},
+		{"id":"5d00c5a10f70d0c4","fromNode":"ef82b5f298e2345a","fromSide":"right","toNode":"844e0c176cabd3eb","toSide":"left"},
+		{"id":"15df0ca6abd8543d","fromNode":"793e0888e6e97759","fromSide":"right","toNode":"7624122696e8e14a","toSide":"left"},
+		{"id":"9802a3c2bb6867ff","fromNode":"7624122696e8e14a","fromSide":"right","toNode":"09b82092f8bc752d","toSide":"left"}
+	]
+}

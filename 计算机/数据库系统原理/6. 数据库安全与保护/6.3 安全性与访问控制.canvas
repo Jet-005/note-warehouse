@@ -1,0 +1,25 @@
+{
+	"nodes":[
+		{"id":"65117cec2a1e26e1","type":"text","text":"数据库的安全性是指保护数据库以防止不合法的使用而造成数据泄露、更改或破坏，所以安全性对于任何一个DBMS来说都是至关重要的。安全性与访问控制：**身份验证、数据库用户权限确认使用**","x":-20,"y":-200,"width":480,"height":120},
+		{"id":"98a0242586b314dc","type":"text","text":"CREATE USER语句创建MySQL账户：\n```\nCREATE USER user [IDENTIFIED BY [PASSWORD]’password’]\n\nuser格式：指定创建用户账号 格式： ’user_name’@’host name’\nIDENTIFIED BY：可选项，指定用户账号对应的口令\nPASSWORD：可选项，指定散列口令\n```","x":-20,"y":-40,"width":480,"height":300},
+		{"id":"61e9969d278f9511","type":"text","text":"使用DROP USER语句删除用户账号\n```\nDROP USER user [,user]…\n```","x":-20,"y":300,"width":480,"height":140},
+		{"id":"7dcf401236c7575f","type":"text","text":"![image.png](https://obsi-jet.oss-cn-beijing.aliyuncs.com/img/20240703180656.png)\n","x":540,"y":-40,"width":520,"height":300},
+		{"id":"beba9f599b5dbde6","type":"text","text":"使用RENAME USER语句修改用户账号\n```\nRENAME USER old_user TO new_user [,old_user TO new_user]…\n\nold_user：指定系统中已经存在的用户账号\nnew_user：指定新的用户账号\n```","x":-20,"y":460,"width":480,"height":240},
+		{"id":"14b214db60f36d6b","type":"text","text":"安全性与访问控制","x":-500,"y":340,"width":250,"height":60},
+		{"id":"52f906d889ff782b","type":"text","text":"使用GRANT语句为用户授权\n```\nGRANT priv_type [（column_list）] [，priv_type [（column_list）]] … ON [object_type] priv_level\nTO user_specification [，user_specification] …\n[WITH GRANT OPTION]\n\npriv_type：用于指定权限的名称\ncolumn_list：用于指定权限要授予给表中哪些具体的列\nobject_type：用于指定权限授予的对象类型\npriv_level：用于指定权限授予的级别\nTO：用于设定用户的口令，以及指定 被授予权限的用户user\nuser_specification：user[IDENTIFIED BY [PASSWORD]’password’]\nWITH GRANT OPTION：可选项，用于实现权限的转移或限制\n```","x":-20,"y":760,"width":480,"height":460},
+		{"id":"cb42cc01623e188d","type":"text","text":"![image.png](https://obsi-jet.oss-cn-beijing.aliyuncs.com/img/20240703182333.png)\n","x":540,"y":860,"width":520,"height":260},
+		{"id":"332ff55667a4c6ab","type":"text","text":"用REVOKE语句撤销用户权限\n```\nREVOKE priv_type [（column_list）] [，priv_type [（column_list）]] … ON [object_type] priv_level FROM user [，user] …\n```","x":-20,"y":1260,"width":480,"height":180},
+		{"id":"54a4be1af7188994","x":540,"y":1260,"width":520,"height":180,"type":"text","text":"![image.png](https://obsi-jet.oss-cn-beijing.aliyuncs.com/img/20240703182741.png)\n"}
+	],
+	"edges":[
+		{"id":"12009b4389037595","fromNode":"14b214db60f36d6b","fromSide":"right","toNode":"65117cec2a1e26e1","toSide":"left"},
+		{"id":"cb6de11e532d8da3","fromNode":"14b214db60f36d6b","fromSide":"right","toNode":"98a0242586b314dc","toSide":"left"},
+		{"id":"025c95bb3ebff83e","fromNode":"98a0242586b314dc","fromSide":"right","toNode":"7dcf401236c7575f","toSide":"left"},
+		{"id":"9153bb2d4d298f18","fromNode":"14b214db60f36d6b","fromSide":"right","toNode":"61e9969d278f9511","toSide":"left"},
+		{"id":"1bd943e17c1a4b31","fromNode":"14b214db60f36d6b","fromSide":"right","toNode":"beba9f599b5dbde6","toSide":"left"},
+		{"id":"8ae58083508488f4","fromNode":"14b214db60f36d6b","fromSide":"right","toNode":"52f906d889ff782b","toSide":"left"},
+		{"id":"6ab16f5c3f0d85c4","fromNode":"52f906d889ff782b","fromSide":"right","toNode":"cb42cc01623e188d","toSide":"left"},
+		{"id":"ef4d4eeae8739a83","fromNode":"14b214db60f36d6b","fromSide":"right","toNode":"332ff55667a4c6ab","toSide":"left"},
+		{"id":"48e6e3ed876b1d37","fromNode":"332ff55667a4c6ab","fromSide":"right","toNode":"54a4be1af7188994","toSide":"left"}
+	]
+}

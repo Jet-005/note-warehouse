@@ -1,1 +1,36 @@
-{}
+{
+	"nodes":[
+		{"id":"20d76bcc6c231ba9","type":"text","text":"数据库完整性","x":-400,"y":-20,"width":250,"height":60},
+		{"id":"3415f120b4e2781c","type":"text","text":"数据库完整性：指数据库中**数据的正确性和相容性**","x":0,"y":-160,"width":250,"height":60},
+		{"id":"775a703f96ffba75","type":"text","text":"作用：防止数据库中存在不符合语义的数据","x":360,"y":-220,"width":400,"height":60},
+		{"id":"8d6c1e68466b9b1a","type":"text","text":"完整性约束条件的作用对象：\nØ 列级约束：包括对**列的类型、取值范围、精度**等的约束\nØ 元组约束：指元组中**各个字段之间的相互约束**\nØ 表级约束：指若干元组、关系之间的联系的约束\n","x":360,"y":-130,"width":400,"height":210},
+		{"id":"885bd2a88fb63c57","type":"text","text":"完整性约束条件是完整性控制机制的核心","x":920,"y":-130,"width":400,"height":60},
+		{"id":"686e5fc2834d8c35","type":"text","text":"定义与实现完整性约束：实体完整性、参照完整性、用户定义的完整性","x":0,"y":180,"width":250,"height":100},
+		{"id":"d7c9247162173475","type":"text","text":"实体完整性：实体完整性是通过**主键约束和候选键约束**实现的","x":360,"y":150,"width":400,"height":80},
+		{"id":"60484a569f859390","type":"text","text":"主键列必须遵守的规则\nØ 每一个表只能定义一个主键\nØ 主键的值（键值）必须能够唯一标志表中的每一行记录，且不能为NULL\nØ 复合主键不能包含不必要的多余列\nØ 一个列名在复合主键的列表中只能出现一次","x":920,"y":50,"width":400,"height":180},
+		{"id":"89575fb7043a52d7","type":"text","text":"\n| 约束方式  | 语句                                   | 关键字         | 区别          |\n| ----- | ------------------------------------ | ----------- | ----------- |\n| 主键约束  | **CREATE TABLE**或<br>**ALTER TABLE** | PRIMARY KEY | 只能创建一个      |\n| 候选键约束 | **CREATE TABLE**或<br>**ALTER TABLE** | UNIQUE      | 可以定义 若干个候选键 |\n","x":920,"y":280,"width":400,"height":300},
+		{"id":"80c56702f7aa253d","type":"text","text":"参照完整性：通过在创建表（CREATE TABLE）或更新表（ALTER TABLE）的***同时定义一个外键声明***来实现的","x":360,"y":660,"width":400,"height":100},
+		{"id":"5a49281024326609","type":"text","text":"外键声明有下列两种方式：\n1）在表中某个列的属性定义后直接加上“ **reference definition** ”语法项。\n\n2）在表中所有列的属性定义后添加“**FOREIGN KEY（index_col name，…）reference_definition** ”子句的语法项。\n\n```\nREFERENCES tbl_name index_col_name，…）\n[ON DELETE reference_option]\n[ON UPDATE reference_option]\n\ntbl_name：指定外键所参照的表名\nindex_col_name：指定被参照的列名\nON DELETE或ON UPDATE：指定参照动作相关的SQL语句\nreference_option：指定参照完整性约束的实现策略（RESTRICT-限制策略（默认的） | CASCADE-级联策略 | SET NULL-置空策略 | NO\nACTION-不采取实施策略）\n```","x":920,"y":605,"width":400,"height":595},
+		{"id":"2dcb94098ced39f6","type":"text","text":"![image.png](https://obsi-jet.oss-cn-beijing.aliyuncs.com/img/20240703121828.png)\n","x":1440,"y":649,"width":865,"height":507},
+		{"id":"e62c601fc72f7fe3","type":"text","text":"用户定义的完整性：\nØ 非空约束：NOT NULL\nØ CHECK 约束：CHECK（expr）\nØ 触发器","x":360,"y":1360,"width":400,"height":120},
+		{"id":"20ea669f7e5e056f","x":360,"y":1560,"width":400,"height":320,"type":"text","text":"命名完整性约束\n```\nCONSTRAINT [symbol]symbol：指定的约束名字。\n```\n**只能给基于表的完整性约束**指定名字，无法给基于列的完整性约束指定名字。\n\n命名完整性约束的方法是在各种完整性约束的定义说明之前加上关键字（CONSTRAINT）和该约束的名字。"},
+		{"id":"f237970702031f68","x":360,"y":1920,"width":400,"height":240,"type":"text","text":"更新完整性约束\n1、完整性约束**不能直接被修改**。实际上是用ALTER TABLE先删除该约束，然后再增加一个与该约束同名的新约束。（**先删除，再增加**）\n2、使用ALTER TABLE语句，可以独立地删除完整性约束，而不会删除表本身。（若使用DROP TABLE语句删除一个表，则表中所有的完整性约束都会被自动删除）"}
+	],
+	"edges":[
+		{"id":"2441a8482c8a2f31","fromNode":"20d76bcc6c231ba9","fromSide":"right","toNode":"3415f120b4e2781c","toSide":"left"},
+		{"id":"acc2bd7a585fb4fa","fromNode":"3415f120b4e2781c","fromSide":"right","toNode":"775a703f96ffba75","toSide":"left"},
+		{"id":"d035596856be2a3d","fromNode":"3415f120b4e2781c","fromSide":"right","toNode":"8d6c1e68466b9b1a","toSide":"left"},
+		{"id":"f4292be425a34346","fromNode":"775a703f96ffba75","fromSide":"right","toNode":"885bd2a88fb63c57","toSide":"left"},
+		{"id":"ef9721bfe3598bd3","fromNode":"8d6c1e68466b9b1a","fromSide":"right","toNode":"885bd2a88fb63c57","toSide":"left"},
+		{"id":"85ff2f4a0e480485","fromNode":"20d76bcc6c231ba9","fromSide":"right","toNode":"686e5fc2834d8c35","toSide":"left"},
+		{"id":"67a88cc3ff67a89f","fromNode":"686e5fc2834d8c35","fromSide":"right","toNode":"d7c9247162173475","toSide":"left"},
+		{"id":"e1acde4faeb33837","fromNode":"d7c9247162173475","fromSide":"right","toNode":"60484a569f859390","toSide":"left"},
+		{"id":"18708fa2876696c2","fromNode":"d7c9247162173475","fromSide":"right","toNode":"89575fb7043a52d7","toSide":"left"},
+		{"id":"77938e7a71c05a64","fromNode":"686e5fc2834d8c35","fromSide":"right","toNode":"80c56702f7aa253d","toSide":"left"},
+		{"id":"94d82da3ee2d36cc","fromNode":"80c56702f7aa253d","fromSide":"right","toNode":"5a49281024326609","toSide":"left"},
+		{"id":"a7c5829e0fc25f0a","fromNode":"5a49281024326609","fromSide":"right","toNode":"2dcb94098ced39f6","toSide":"left"},
+		{"id":"49342ce424510e10","fromNode":"686e5fc2834d8c35","fromSide":"right","toNode":"e62c601fc72f7fe3","toSide":"left"},
+		{"id":"433e796a1e1d5ab2","fromNode":"686e5fc2834d8c35","fromSide":"right","toNode":"20ea669f7e5e056f","toSide":"left"},
+		{"id":"bd909350e23a163f","fromNode":"686e5fc2834d8c35","fromSide":"right","toNode":"f237970702031f68","toSide":"left"}
+	]
+}

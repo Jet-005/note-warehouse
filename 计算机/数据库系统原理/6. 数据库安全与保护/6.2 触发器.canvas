@@ -1,0 +1,23 @@
+{
+	"nodes":[
+		{"id":"cd87a7bd7c64eb88","type":"text","text":"是用户定义在关系表上的一类由**事件驱动**的数据库对象。触发器一旦定义，无须用户调用，任何对表的修改操作均**自动激活相应的触发器。每个表最多支持6个触发器。**\n主要作用是实现主键和外键不能保证的复杂的参照完整性和数据的一致性，从而有效地保护表中的数据","x":-120,"y":-200,"width":360,"height":240},
+		{"id":"cbb484dedbbf5ee2","type":"text","text":"创建触发器：CREATE TRIGGER\n```\nCREATE TRIGGER trigger_name trigger_time trigger_event\nON tbl_name FOR EACH ROW trigger_body\n\ntrigger_name：指定触发器的名称\ntrigger_time：指定触发器被触发的时刻\ntrigger_event：指定触发器的触发事件\ntbl_name：指定与触发器相关联的表名\nFOR EACH ROW：指定对于受触发事件影响的每一行都要激活触发器\n的动作 \ntrigger_body：指定触发器动作主体\n```","x":-120,"y":100,"width":360,"height":460},
+		{"id":"896a12e0145a8e8e","type":"text","text":"在触发器的创建中，**每个表每个事件每次只允许一个触发器**，因此，每个表最多支持**6个**触发器，即**每条INSERT、UPDATE、DELETE的“之前”与“之后”**","x":360,"y":280,"width":500,"height":100},
+		{"id":"26c7e71be862c51d","x":-120,"y":640,"width":360,"height":340,"type":"text","text":"使用DROP语句删除触发器\n```\nDROP TRIGGER [IF EXISTS][schema_name.]trigger_name\n\nIF EXISTS：用于避免在没有触发器的 情况下删除触发器\nschema_name：指定触发器所在的数据库的名称\ntrigger_name：指定要删除的触发器名称\n```"},
+		{"id":"91b8402c8711ab09","type":"text","text":"触发器","x":-560,"y":300,"width":250,"height":60},
+		{"id":"cf92ff325ae6da75","x":-120,"y":1020,"width":360,"height":60,"type":"text","text":"使用触发器：INSERT触发器 DELETE触发器 UPDATE触发器"},
+		{"id":"67651eab0de46bce","x":360,"y":885,"width":520,"height":330,"type":"text","text":"INSERT触发器：在INSERT触发器代码内，可引用一个名为NEW（不区分大小写）的虚拟表，来访问被插入的行。在BEFORE INSERT触发器中，NEW中的值可以被更新\n![image.png](https://obsi-jet.oss-cn-beijing.aliyuncs.com/img/20240703153002.png)\n"},
+		{"id":"4ee07f44c359aad8","x":363,"y":1260,"width":517,"height":100,"type":"text","text":"DELETE触发器：在DELETE触发器代码内，可引用一个名为OLD（不区分大小写）的虚拟表，来访问被删除的行。OLD中的值**全部是只读的，不能被更新。**"},
+		{"id":"7bb4444726a88b28","x":363,"y":1400,"width":517,"height":360,"type":"text","text":"UPDATE触发器：在UPDATE触发器代码内，可引用一个名为OLD（不区分大小写）的虚拟表，来访问UPDATE语句执行前的值，也可以引用一个名为NEW（不区分大小写）的虚拟表来访问更新后的值。![image.png](https://obsi-jet.oss-cn-beijing.aliyuncs.com/img/20240703153330.png)\n"}
+	],
+	"edges":[
+		{"id":"3fe7186f0fbc3bac","fromNode":"91b8402c8711ab09","fromSide":"right","toNode":"cd87a7bd7c64eb88","toSide":"left"},
+		{"id":"3698d4a2dafce74a","fromNode":"91b8402c8711ab09","fromSide":"right","toNode":"cbb484dedbbf5ee2","toSide":"left"},
+		{"id":"b91b04f4b1f6ce12","fromNode":"cbb484dedbbf5ee2","fromSide":"right","toNode":"896a12e0145a8e8e","toSide":"left"},
+		{"id":"6abce4433fe6be57","fromNode":"91b8402c8711ab09","fromSide":"right","toNode":"26c7e71be862c51d","toSide":"left"},
+		{"id":"854abdb35757cbb4","fromNode":"91b8402c8711ab09","fromSide":"right","toNode":"cf92ff325ae6da75","toSide":"left"},
+		{"id":"98dec3706b44b26a","fromNode":"cf92ff325ae6da75","fromSide":"right","toNode":"67651eab0de46bce","toSide":"left"},
+		{"id":"3cb3bddc12167890","fromNode":"cf92ff325ae6da75","fromSide":"right","toNode":"4ee07f44c359aad8","toSide":"left"},
+		{"id":"dc20779d871e60b0","fromNode":"cf92ff325ae6da75","fromSide":"right","toNode":"7bb4444726a88b28","toSide":"left"}
+	]
+}

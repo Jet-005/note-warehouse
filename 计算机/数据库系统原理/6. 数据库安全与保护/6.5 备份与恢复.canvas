@@ -1,0 +1,24 @@
+{
+	"nodes":[
+		{"id":"e5465ea4f91e640a","x":-440,"y":0,"width":250,"height":60,"type":"text","text":"备份与恢复"},
+		{"id":"52d8dbc6419dcd76","x":-60,"y":-140,"width":250,"height":60,"type":"text","text":"数据丢失的途径"},
+		{"id":"0ea36b083a6c72b6","x":300,"y":-205,"width":250,"height":190,"type":"text","text":"1.计算机硬件故障\n2.计算机软件故障\n3.病毒\n4.人为误操作\n5.自然灾害\n6.盗窃"},
+		{"id":"bc01501ae5decf2d","x":-60,"y":100,"width":250,"height":60,"type":"text","text":"数据库备份与恢复的概念"},
+		{"id":"9d153eb7c6138de4","x":300,"y":40,"width":380,"height":60,"type":"text","text":"数据备份是指通过导出数据或者复制表文件的方式来制作数据库的复本"},
+		{"id":"346fe18705b71692","x":300,"y":130,"width":380,"height":190,"type":"text","text":"数据库恢复则是当数据库出现故障或遭到破坏时，将备份的数据库加载到系统，从而使数据库从错误状态恢复到备份时的正确状态。\n数据库的恢复是**以备份为基础**的，它是与备份相对应的系统维护和管理操作"},
+		{"id":"d60e68cb99365936","x":-60,"y":380,"width":380,"height":240,"type":"text","text":"使用SELECT INTO…OUTFILE语句备份数据\n```\nSELECT *INTO OUTFILE ‘file_name’ export_options | INTO DUMPFILE ‘file_name’\n\nfile_name：指定数据备份文件的名称\n```"},
+		{"id":"52e226c4264b20ef","x":-60,"y":660,"width":380,"height":140,"type":"text","text":"使用LOAD DATA…INFILE语句恢复数据\n```\nLOAD DATA INFILE‘file_name’ INTO TABLE table_name\n```"},
+		{"id":"4d5b8f0354d14963","x":400,"y":380,"width":280,"height":400,"type":"text","text":"需要注意的是，在多个用户同时使用MySQL数据库的情况下，为了得到一个一致的备份，需要在指定的表上使用**LOCK TABLES tablename READ语句做一个读锁定**，以防止在备份过程中表被其他用户更新；而当恢复数据时，则需要使用**LOCK TABLES table name WRITE语句做一个写锁定**，以避免发生数据冲突。在\n数据库备份或恢复完毕之后，需要使用 **UNLOCK TABLES**语句对该表进行解锁。"}
+	],
+	"edges":[
+		{"id":"804832c964a11976","fromNode":"e5465ea4f91e640a","fromSide":"right","toNode":"52d8dbc6419dcd76","toSide":"left"},
+		{"id":"7c003d60aceac942","fromNode":"52d8dbc6419dcd76","fromSide":"right","toNode":"0ea36b083a6c72b6","toSide":"left"},
+		{"id":"2696b2221dc40008","fromNode":"e5465ea4f91e640a","fromSide":"right","toNode":"bc01501ae5decf2d","toSide":"left"},
+		{"id":"0c1c118a5a93b904","fromNode":"bc01501ae5decf2d","fromSide":"right","toNode":"9d153eb7c6138de4","toSide":"left"},
+		{"id":"517737225005d9ad","fromNode":"bc01501ae5decf2d","fromSide":"right","toNode":"346fe18705b71692","toSide":"left"},
+		{"id":"f2aaf30d2b5712a7","fromNode":"e5465ea4f91e640a","fromSide":"right","toNode":"d60e68cb99365936","toSide":"left"},
+		{"id":"c83490d0fb4f962e","fromNode":"e5465ea4f91e640a","fromSide":"right","toNode":"52e226c4264b20ef","toSide":"left"},
+		{"id":"ac1e1e0dd90159cc","fromNode":"d60e68cb99365936","fromSide":"right","toNode":"4d5b8f0354d14963","toSide":"left"},
+		{"id":"8f27ae9b82516efe","fromNode":"52e226c4264b20ef","fromSide":"right","toNode":"4d5b8f0354d14963","toSide":"left"}
+	]
+}

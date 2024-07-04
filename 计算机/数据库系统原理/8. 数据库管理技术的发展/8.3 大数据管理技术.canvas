@@ -1,0 +1,43 @@
+{
+	"nodes":[
+		{"id":"d8d19313ee55cd8f","type":"text","text":"大数据的定义","x":-20,"y":-180,"width":250,"height":60},
+		{"id":"19346b4242abdf76","type":"text","text":"大数据及其特征：大数据是指**无法在可容忍**的时间内用现有信息技术和软、硬件工具对其进行**感知、获取、管理、处理的**服务的数据集合。","x":360,"y":-280,"width":400,"height":100},
+		{"id":"6cd9480d96b466ba","type":"text","text":"IBM把大数据的特点概括为4个V：大量化（Volume）、多样化（Variety）、快速化（Velocity）、真实性（Verity），强调大数据呈现价值稀疏性的特点。","x":360,"y":-120,"width":400,"height":120},
+		{"id":"ad23ba832342c3ce","x":880,"y":-240,"width":500,"height":60,"type":"text","text":"数据量巨大，即大量化（Volume）。通过各种设备产生海量数据，数据规模庞大，数据量从TB级别，跃升到PB级别"},
+		{"id":"6b75bb80df8c35b4","x":880,"y":-150,"width":500,"height":70,"type":"text","text":"数据种类繁多，即多样化（Variety）。大数据种类繁多，在编码方式、数据格式和应用特征等多个方面存在差异性"},
+		{"id":"99803e978e4b98ec","x":880,"y":-60,"width":500,"height":100,"type":"text","text":"处理速度快，即快速化（Velocity）。大数据对实时处理有着较高的要求，在海量数据面前，处理数据的效率就是企业的竞争力"},
+		{"id":"6400536ddd9772bd","x":880,"y":60,"width":500,"height":60,"type":"text","text":"价值（Value）密度低。价值密度的高低与数据总量的大小成反比"},
+		{"id":"44685fbddf58164f","x":-20,"y":127,"width":250,"height":60,"type":"text","text":"大数据管理技术典型代表"},
+		{"id":"c4f1f2483e8ada0b","x":360,"y":127,"width":400,"height":133,"type":"text","text":"大数据存储：大数据的存储可能需要几十台、上百台甚至更多的服务器节点进行分布式存储。典型案例是**Hadoop**开源架构下的分布式文件系统（Hadoop Distributed File System，**HDFS**）"},
+		{"id":"b13292feb6d00404","x":360,"y":320,"width":400,"height":240,"type":"text","text":"NOSQL数据管理系统：NOSQL是以互联网大数据应用为背景发展起来的分布式数据管理系统。NOSQL有两种解释：一种是Non-Relational，即非关系数据库；另一种是Not Only SQL，即数据管理技术不仅仅是SQL。\nNOSQL系统支持的数据存储模型通常有键值（Key-Value）模型、文档（Document）模型、列（Column）模型和图（Graph）模型等"},
+		{"id":"418762ae21516c3c","x":880,"y":220,"width":500,"height":160,"type":"text","text":"键值（Key- Value）存储\nKey-Value存储是NOSQL数据库采用最多的数据存储方式，它的数据是以Key-value形式存储的。Key-value数据模型是一个映射，**Key是查找数据地址的唯一关键字，而value是实际存储的内容**"},
+		{"id":"8add6856b96fcd8a","x":880,"y":400,"width":500,"height":220,"type":"text","text":"文档存储\n文档存储不需要定义表结构，但可以像定义表结构一样使用。文档存储的存储格式可以多样化，适合存储系统日志等**非结构化数据。**\n与Key-value存储不同的是，它可以通过复杂的查询条件来获取数据。\n常见的文档型数据库有**CouchDB、MongoDB**等"},
+		{"id":"28994f5c7aa6b425","x":880,"y":640,"width":500,"height":180,"type":"text","text":"列存储\n列存储是以**列为单位来存储数据**的，擅长以列为单位读入数据，**比较适合对某一列进行随机查询处理**。采用列存储数据模型让数据库系统具有高扩展性，即使数据增加也不会**降低相应的处理速度**，因此列存储主要应用于需要处理大量数据的情况。常见的列存储数据库有**Cassandra、HBase**等"},
+		{"id":"9463dbd320646484","x":880,"y":860,"width":500,"height":160,"type":"text","text":"图存储\n图存储数据库是**基于图理论构建**的，使用**结点、属性和边**的概念。结点代表实体，属性保存与结点相关的信息，而边用来连\n接结点，表示两者关系。图数据库存储某些数据集非常快，**可以把图直接映射到面向对象应用程序中。**"},
+		{"id":"dc726dcbea4d4aca","type":"text","text":"大数据管理技术","x":-560,"y":400,"width":250,"height":60},
+		{"id":"1da37775d8ab4907","x":-20,"y":1080,"width":250,"height":60,"type":"text","text":"Mapreduce技术"},
+		{"id":"2550ee6d59bfba68","x":360,"y":990,"width":400,"height":240,"type":"text","text":"MapReduce技术是Google公司于**2004年**提出的大规模**并行计算解决**方案，主要应用于大规模廉价集群上的大数据并行处理。MapReduce以Key/value的分布式存储系统为基础，通过元数据集中存储、数据以chunk为单位分布存储和数据chunk冗余复制来保证其高可用性。\nMapReduce是一种**并行编程模型**。它把计算过程**分解为两个阶段，即Map阶段和Red阶段**"},
+		{"id":"219c4db6f92872cc","x":360,"y":1280,"width":400,"height":320,"type":"text","text":"MapReduce具体执行过程是：\n首先，对输入的数据源进行分块，交给多个Map任务去执行，Map任务执行Map函数，根据某种规则对数据分类，写入本地硬盘；\n然后，进入Reduce阶段，在该阶段由Reduce函数将Map阶段具有相同Key值的中间结果收集到相同的。Reduce节点进行合并处理，并将结果写入本地磁盘。\n程序的最终结果可以通过合并所有Reduce任务的输出得到。其中，Map函数和Reduce函数是用户根据应用的具体需求进行编写"},
+		{"id":"eb90af5d21701c26","x":360,"y":1640,"width":400,"height":180,"type":"text","text":"MapReduce是一种简单易用的软件框架。基于它可以开发出运行在成千上万个结点上，并以容错的方式并行处理海量数据的算法和软件。通常，**计算结点和存储结点是同一个节点**，即**MapReduce框架和Hadoop分布式文件系统运行于相同的结点集**"}
+	],
+	"edges":[
+		{"id":"b7cd576c39945e86","fromNode":"dc726dcbea4d4aca","fromSide":"right","toNode":"d8d19313ee55cd8f","toSide":"left"},
+		{"id":"6ea299b5023ec26c","fromNode":"d8d19313ee55cd8f","fromSide":"right","toNode":"19346b4242abdf76","toSide":"left"},
+		{"id":"302764e32c92a678","fromNode":"d8d19313ee55cd8f","fromSide":"right","toNode":"6cd9480d96b466ba","toSide":"left"},
+		{"id":"305cb6f0a142f77f","fromNode":"6cd9480d96b466ba","fromSide":"right","toNode":"ad23ba832342c3ce","toSide":"left"},
+		{"id":"e3f50303d0b27b54","fromNode":"6cd9480d96b466ba","fromSide":"right","toNode":"6b75bb80df8c35b4","toSide":"left"},
+		{"id":"70c9c1f5c533b325","fromNode":"6cd9480d96b466ba","fromSide":"right","toNode":"99803e978e4b98ec","toSide":"left"},
+		{"id":"0e8760a4292d8490","fromNode":"6cd9480d96b466ba","fromSide":"right","toNode":"6400536ddd9772bd","toSide":"left"},
+		{"id":"3c1854adbbc31cb0","fromNode":"dc726dcbea4d4aca","fromSide":"right","toNode":"44685fbddf58164f","toSide":"left"},
+		{"id":"5d8771dcc1b3a0b2","fromNode":"44685fbddf58164f","fromSide":"right","toNode":"c4f1f2483e8ada0b","toSide":"left"},
+		{"id":"52b95aa672cee021","fromNode":"44685fbddf58164f","fromSide":"right","toNode":"b13292feb6d00404","toSide":"left"},
+		{"id":"83fddd3f223b4ed0","fromNode":"b13292feb6d00404","fromSide":"right","toNode":"418762ae21516c3c","toSide":"left"},
+		{"id":"d0bce7a3d869ecf0","fromNode":"b13292feb6d00404","fromSide":"right","toNode":"8add6856b96fcd8a","toSide":"left"},
+		{"id":"53fdf3917cf62a3c","fromNode":"b13292feb6d00404","fromSide":"right","toNode":"28994f5c7aa6b425","toSide":"left"},
+		{"id":"1c9363dd1d3537ad","fromNode":"b13292feb6d00404","fromSide":"right","toNode":"9463dbd320646484","toSide":"left"},
+		{"id":"3191cf4100ab137e","fromNode":"dc726dcbea4d4aca","fromSide":"right","toNode":"1da37775d8ab4907","toSide":"left"},
+		{"id":"6353fa6744d4f857","fromNode":"1da37775d8ab4907","fromSide":"right","toNode":"2550ee6d59bfba68","toSide":"left"},
+		{"id":"cab2393242bf9574","fromNode":"1da37775d8ab4907","fromSide":"right","toNode":"219c4db6f92872cc","toSide":"left"},
+		{"id":"499f1539f75e9701","fromNode":"1da37775d8ab4907","fromSide":"right","toNode":"eb90af5d21701c26","toSide":"left"}
+	]
+}

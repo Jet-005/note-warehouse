@@ -1,0 +1,34 @@
+{
+	"nodes":[
+		{"id":"e71c8292361719a9","x":-100,"y":-240,"width":250,"height":60,"type":"text","text":"第一代数据库系统"},
+		{"id":"22f5c11c253615a7","x":240,"y":-310,"width":360,"height":80,"type":"text","text":"层次模型数据库管理系统：**1969年IBM**公司研制的层次模型数据库管理系统IMS。"},
+		{"id":"e8bc4510626bb007","x":240,"y":-210,"width":360,"height":100,"type":"text","text":"网状模型数据库管理系统：DBTG所提议的方法是基于网状结构的，是网状模型数据库系统的典型代表"},
+		{"id":"78a6cd1dadc76e2c","x":700,"y":-285,"width":380,"height":150,"type":"text","text":"（1）支持三级模式（外模式、模式、内模式）的体系结构。\n（2）用存取路径来表示数据之间的联系。\n（3）独立的数据定义语言。\n（4）导航的数据操纵语言"},
+		{"id":"e676096fc628fbf2","x":-100,"y":-20,"width":250,"height":100,"type":"text","text":"第二代数据库系统（20世纪70年代称 为数据库时代）"},
+		{"id":"ed21c3823f35cfa8","x":240,"y":-20,"width":360,"height":100,"type":"text","text":"关系数据库是以关系模型为基础。关系模型是由数据结构、关系操作和数据完整性三部分组成。"},
+		{"id":"ab9be1c6b81e4490","x":700,"y":-105,"width":380,"height":270,"type":"text","text":"20世纪70年代是关系数据库理论研究和原型开发的时代，其主要成果有：\n（1）奠定了关系模型的理论基础，给出了人们一致接受的关系模型的规范说明。\n（2）研究了关系数据语言，有关系代数、关系演算、SQL语言及QBE等。\n（3）研制了大量的RDBMS的原型，攻克了系统实现中查询优化、并发控制、故障恢复等一系列关键技术。"},
+		{"id":"d79ab5b773c54c5e","x":-480,"y":0,"width":250,"height":60,"type":"text","text":"数据库技术发展概述"},
+		{"id":"2b4742fc3a02f316","x":240,"y":165,"width":360,"height":180,"type":"text","text":"关系数据库系统特点：\n1、模型简单清晰 \n2、理论基础好\n3、数据独立性强 \n4、数据库语言非过程化 \n5、标准化"},
+		{"id":"b7ba3a328083d8a5","x":240,"y":370,"width":360,"height":150,"type":"text","text":"特点：\nØ 应支持数据管理、对象管理和知识管理\nØ 必须保持或继承第二代数据库系统的技术\nØ 必须对其他系统开放"},
+		{"id":"bc85023ed8c04f05","x":700,"y":380,"width":380,"height":130,"type":"text","text":"数据库系统的开放性表现在：支持数据库语言标准；在网络上支持标准网络协以；系统具有良好的可移植性、可连接性、可扩展性和互操作性等"},
+		{"id":"602051cd7e58ecea","x":-100,"y":420,"width":250,"height":50,"type":"text","text":"新一代数据库系统"},
+		{"id":"6ff4db7524afaabe","x":240,"y":580,"width":360,"height":160,"type":"text","text":"这些新的数据库系统**支持不同的数据模型**，有扩展关系数据模型的对象关系数据库系统、**面向对象模型的对象数据库系统**、支持XML半结构化模型的XML数据库系统等"},
+		{"id":"56f3c4ecf0094e35","x":240,"y":760,"width":360,"height":320,"type":"text","text":"数据库技术与其他计算机技术相结合是数据库技术发展的一个显著特征。\n• 与分布式处理技术相结合出现的**分布式数据库系统**\n• 与并行处理技术相结合出现的**并行数据库系统**\n• 与人工智能技术相结合出现的**演绎数据库、知识和主动数据库系统等**\n• 与模糊技术相结合出现的**模糊数据库系统**\n• 与Web技术相结合出现的**Web数据库**。"}
+	],
+	"edges":[
+		{"id":"97717cf05f3745fb","fromNode":"e71c8292361719a9","fromSide":"right","toNode":"22f5c11c253615a7","toSide":"left"},
+		{"id":"c395131a8b96f9d5","fromNode":"e71c8292361719a9","fromSide":"right","toNode":"e8bc4510626bb007","toSide":"left"},
+		{"id":"6493dc4755ad1ff3","fromNode":"22f5c11c253615a7","fromSide":"right","toNode":"78a6cd1dadc76e2c","toSide":"left"},
+		{"id":"b6b42d22c78eca82","fromNode":"e8bc4510626bb007","fromSide":"right","toNode":"78a6cd1dadc76e2c","toSide":"left"},
+		{"id":"5863a6f5ad870bf1","fromNode":"d79ab5b773c54c5e","fromSide":"right","toNode":"e71c8292361719a9","toSide":"left"},
+		{"id":"a41f0e8e92a7f38b","fromNode":"d79ab5b773c54c5e","fromSide":"right","toNode":"e676096fc628fbf2","toSide":"left"},
+		{"id":"2d5659442cb8a989","fromNode":"e676096fc628fbf2","fromSide":"right","toNode":"ed21c3823f35cfa8","toSide":"left"},
+		{"id":"a489f118d96204e0","fromNode":"ed21c3823f35cfa8","fromSide":"right","toNode":"ab9be1c6b81e4490","toSide":"left"},
+		{"id":"d5381630994b5917","fromNode":"e676096fc628fbf2","fromSide":"right","toNode":"2b4742fc3a02f316","toSide":"left"},
+		{"id":"29c3936e73af97f7","fromNode":"d79ab5b773c54c5e","fromSide":"right","toNode":"602051cd7e58ecea","toSide":"left"},
+		{"id":"907669c10435ca92","fromNode":"602051cd7e58ecea","fromSide":"right","toNode":"b7ba3a328083d8a5","toSide":"left"},
+		{"id":"21763320a8d30867","fromNode":"b7ba3a328083d8a5","fromSide":"right","toNode":"bc85023ed8c04f05","toSide":"left"},
+		{"id":"ea93aefe1e534baa","fromNode":"602051cd7e58ecea","fromSide":"right","toNode":"6ff4db7524afaabe","toSide":"left"},
+		{"id":"eb02a9e1c40cde82","fromNode":"602051cd7e58ecea","fromSide":"right","toNode":"56f3c4ecf0094e35","toSide":"left"}
+	]
+}

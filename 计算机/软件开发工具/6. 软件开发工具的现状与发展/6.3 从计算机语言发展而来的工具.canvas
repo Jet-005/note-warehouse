@@ -1,9 +1,0 @@
-{
-	"nodes":[
-		{"id":"3cea9b68d4e81a2b","x":-320,"y":-290,"width":1640,"height":890,"type":"file","file":"计算机/软件开发工具/6. 软件开发工具的现状与发展/6.3 从计算机语言发展而来的工具.md"},
-		{"id":"aeb030f5e4c69b3c","type":"text","text":"从计算机语言发展而来的工具","x":-840,"y":125,"width":250,"height":60}
-	],
-	"edges":[
-		{"id":"fa85a1c949a70678","fromNode":"aeb030f5e4c69b3c","fromSide":"right","toNode":"3cea9b68d4e81a2b","toSide":"left"}
-	]
-}
